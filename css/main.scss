@@ -1,0 +1,257 @@
+// =========================
+// Table of Contents
+// =========================
+// 1- Variables
+// 2- General
+// 3- components
+    // 3-1 button
+// 4- Navigation
+// 5- Banner
+// 6- Hero
+
+// 1- Variables
+
+$font-stack : 'Montserrat', sans-serif;
+
+// 2- General
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+}
+
+// 3- Components
+
+//3-1 Button
+
+.button {
+    padding: 15px 27px 14px 33px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.button--transparent {
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 15px 45px 11px 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: left;
+    // font: SemiBold 18px/22px Montserrat;
+    font-family:$font-stack ;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+    
+
+
+// 4- Navigation
+
+header {
+        background-color: rgba(235, 235, 235, .56);
+        backdrop-filter: blur(10px);
+        padding: 16px 8% 16px 0;
+        
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    nav {
+        width: 100%;
+    }
+
+ 
+
+.logo {
+    cursor: pointer;
+    height: 28px;
+    order: 1;
+    margin-left: 20px;
+
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+    &__link{
+        display: none;
+        text-align: center;
+        width: 100%;
+        padding: 16.5px 20px;
+        border-bottom: 1px solid #CCCCCC;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        order: 3;
+        
+        a {
+            text-decoration: none;
+            font-family: $font-stack;
+            text-align: center;
+            font-weight:600;
+            font-size: 20px;
+            letter-spacing: 0;
+            color: rgba(34, 34, 34, .53);
+        }
+
+        .button {
+            color: #FFFFFF;
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+    
+} 
+
+.active {
+    .nav__links__link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+.toggle {
+    order: 2;
+}
+
+.button{
+
+    &--academy {
+         background: #3EA410 0% 0% no-repeat padding-box;
+         color: #FFFFFF;
+         font-family: $font-stack;
+         font-weight:600;
+         font-size: 14px;
+        
+    }
+
+    &--book {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        color: #000000;
+        font-family: $font-stack;
+        font-weight:600;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// Navigation Media Queries
+@media only screen and (min-width: 768px) {
+    header {
+        position: sticky;
+        top: 0px;
+        padding: 20px 8% 12px 8%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        height: 48px;
+        margin-bottom: 0;
+    }
+    
+    .links {
+        width: 60%;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav__links__link {
+        display: inline-block;
+        padding: 25px 10px;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+    
+}
+
+
+// 5- Banner
+
+.banner {
+    background: #A20000 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+
+
+    &__text {
+        padding: 13px 0 10px 0;
+        margin-left: 9%;
+    }
+
+    &__text , a {
+        font-family: $font-stack ;
+        font-size: 16px ;
+        font-weight: 400 ;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        
+    }
+}
+
+// 6- Hero
+.hero {
+    background-image: url(/images/tina.png);
+    height: 359px;
+    width: 100%;
+    background-size:cover;
+    background-position: 0 0px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+        text-align: center;
+
+        h1 {
+            font-family: $font-stack;
+            text-align: center;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            margin: 60px 30px;
+        }
+    }
+}
+
