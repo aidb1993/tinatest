@@ -223,11 +223,12 @@ nav {
 }
 
 .hero {
-  background-image: url(/images/tina.png);
+  background-image: url(/images/TinaSliderMobile480.png);
+  width: 414px;
   height: 359px;
-  width: 100%;
   background-size: cover;
-  background-position: 0 0px;
+  background-repeat: no-repeat;
+  background-position-y: -40px;
 }
 
 .hero__text {
@@ -244,7 +245,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px;
+  margin: 0 30px 0 10px;
   text-align: center;
 }
 
@@ -255,6 +256,25 @@ nav {
   font-size: 24px;
   letter-spacing: 0;
   color: #FFFFFF;
-  margin: 60px 30px;
+  margin: 60px 35px 19px 35px;
+}
+
+.hero__text p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  padding: 0 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 20px;
 }
 /*# sourceMappingURL=main.css.map */
