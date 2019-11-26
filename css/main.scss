@@ -8,6 +8,7 @@
 // 4- Navigation
 // 5- Banner
 // 6- Hero
+// 7- Shields
 
 // 1- Variables
 
@@ -267,17 +268,15 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 30px 0 10px;
-        text-align: center;
+        margin: 30px auto 0px;
 
         h1 {
             font-family: $font-stack;
             text-align: center;
             font-weight: 700;
             font-size: 24px;
-            letter-spacing: 0;
             color: #FFFFFF;
-            margin: 60px 35px 19px 35px;
+            margin: 18px auto;
             padding: 0;
             // padding-bottom: 16px;
         }
@@ -289,16 +288,21 @@ nav {
             font-size: 16px;
             letter-spacing: 0;
             color: #FFFFFF;
-            padding: 0 56px;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            line-height: 20px;
+            padding: 0 40px 20px ;
+            line-height: 24px;
+            margin: 0 23px ;
         }
     }
 
     .button {
-        margin-top: 70px;
+        margin-top: 85px;
+        box-shadow: 0px 2px 2px #0000003D;
+        border-radius: 2px;
+        padding: 14px 73px;
+        font-family: $font-stack;
+        font-weight: 500;
+        line-height: 43px;
+        font-size: 24px;
     }
 }
 
@@ -307,7 +311,7 @@ nav {
 @media only screen and (min-width: 768px) {
     .hero {
         background-image: url(/images/Homeimg.png);
-        height: calc(100vh - 80px);
+        height: 359px;
         background-size:cover;
         background-repeat: no-repeat;
         position: relative;
@@ -316,5 +320,21 @@ nav {
     %__text {
         position: absolute;
         top: 0;
+    }
+}
+
+// 7- Shields
+
+.shields {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    margin-top: 50px;
+
+    img {
+        height: 63px;
+        width: 63px;
     }
 }
