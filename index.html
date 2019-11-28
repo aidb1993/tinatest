@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Fonts -->
     <!-- Montserrat Font Import -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
     <!-- Fair Display Font Import -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i&display=swap" rel="stylesheet">
     <!-- CSS -->
     <!-- normalize CSS -->
-    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
@@ -42,21 +44,74 @@
     <!-- <div class="banner">
         <h3 class="banner__text">Tina is on Live! <a href="#">Start watching</a> </h3>
     </div> -->
+
     <!-- Hero -->
     <div class="hero">
-        <div class="hero__text ">
-            <h1>"Two Time LPGA National Teacher of the Year"</h1>
-            <p>Tina Tombs Golf provides well-rounded and individually tailored instruction to help you elevate your skills and add enjoyment to the great game of golf.</p>
+        <div class="container">
+            <div class="hero__text ">
+                <h1>"Two Time LPGA National Teacher of the Year"</h1>
+                <p>Tina Tombs Golf provides well-rounded and individually tailored instruction to help you elevate your skills and add enjoyment to the great game of golf.</p>
+                <a href="#" class="button button--academy">Book Now</a>
+            </div>
         </div>
-        <a href="#" class="button button--academy">Book Now</a>
      </div>
+
+     <!-- Shields -->
      <section class="shields">
          <img src="/images/shield-1.png" alt="">
          <img src="/images/shield-2.png" alt="">
-         <img src="/images/shield-3-main.png" alt="">
+         <img src="/images/shield-3-main.png" class="shields--main" alt="">
          <img src="/images/shield-4.png" alt="">
-         <img src="/images/shield-5.png" alt="">
+         <img src="/images/shield-5.png" alt="" class="shields--last">
      </section>
+
+     <!-- Coaches -->
+     <section class="coaches">
+         <div class="coaches__container">
+            <h1>The Coaches</h1>
+            <div class="slider__container">
+                <div class="slider">
+                        <i class="material-icons slider__arrow" id="arrow--prev">chevron_left</i>
+                        <img src="/images/coaches-coach1.png" alt="" class="slider__item item--active">
+                        <img src="/images/coaches-coach2.png" alt="" class="slider__item">
+                        <img src="/images/coaches-coach3.png" alt="" class="slider__item">
+                        <i class="material-icons slider__arrow" id="arrow--next">chevron_right</i>
+                </div>
+            </div>
+            <!-- <div class="coaches__dots">. . .</div> -->
+            <div class="coaches__card">
+                <div class="coaches__card-text">
+                    <h2>Tina Tombs</h2>
+                    <h3>Master Instructor</h3>
+                    <p>As the founder and President of Tina Tombs Golf at the Arizona Biltmore Golf Club, she holds the role of Director of Instruction, as well as carries out the responsibility to oversee and organize the overall education and teaching programs for the Tina Tombs Golf Learning Center.</p>
+                    <p class="bold">Tina is recognized as one of GOLF Magazine's TOP 100 Instructors, The LPGA T&CP Two-Time National Teacher of The Year, LPGA Top 50 Teachers, Golf Digest Best in State and Golf Tips Magazine Top 25 Instructors.
+                    </p>
+                </div>
+                <img class="coaches__card-img" src="/images/CoachTina.png" alt="">
+            </div>
+        </div>
+     </section>
+
+     <!-- Testimonials -->
+     <section class="testimonials">
+         <h1>Testimonials</h1>
+         <div class="testimonials__card">
+             <div class="testimonials__text">
+                 <p>I would like to leave a note of appreciation for the partnership between the Arizona Biltmore and Tina Tombs. After a long hiatus, we were eager to return to our hobby of golf. Tina was wonderful to work with and made our collective stay here a joy. It is a wonderful opportunity you provide to benefit from her experience and talent.
+                 </p>
+             </div>
+             <div class="quotes">
+                 <p class="quote--left">,,</p>
+                 <p class="quote--right">,,</p>
+             </div>
+         </div>
+     </section>
+     <!-- Scripts -->
+
+     <!-- Nav Toggler -->
     <script src="/js/nav__toggler.js"></script>
+
+    <!-- Slider -->
+    <script src="/js/slider.js"></script>
 </body>
 </html>

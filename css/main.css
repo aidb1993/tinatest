@@ -6,7 +6,8 @@
 }
 
 .container {
-  width: 70%;
+  width: 100%;
+  position: relative;
 }
 
 .button {
@@ -33,7 +34,7 @@
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header {
@@ -41,6 +42,7 @@ header {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 16px 8% 16px 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -101,7 +103,7 @@ nav {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   letter-spacing: 0;
   color: rgba(34, 34, 34, 0.53);
@@ -142,18 +144,18 @@ nav {
 }
 
 .button--academy {
-  background: #3EA410 0% 0% no-repeat padding-box;
+  background: #3EA410;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
 }
 
 .button--book {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #FFFFFF;
   color: #000000;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   width: 100%;
   text-align: center;
@@ -175,6 +177,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 10;
   }
   .toggle {
     display: none;
@@ -212,13 +215,22 @@ nav {
     border-bottom: none;
     margin-bottom: 0;
   }
+  .nav__links__link a {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.53);
+  }
   .button {
     font-size: 14px;
   }
 }
 
 .banner {
-  background: #A20000 0% 0% no-repeat padding-box;
+  background: #A20000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +247,7 @@ nav {
 .banner__text, .banner a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   color: #FFFFFF;
 }
@@ -258,6 +270,7 @@ nav {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
 }
 
 .hero__text {
@@ -290,17 +303,17 @@ nav {
 .hero__text p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0;
   color: #FFFFFF;
-  padding: 0 40px 20px;
   line-height: 24px;
+  padding: 0 40px 20px;
   margin: 0 23px;
 }
 
 .hero .button {
-  margin-top: 85px;
+  margin-top: 90px;
   -webkit-box-shadow: 0px 2px 2px #0000003D;
           box-shadow: 0px 2px 2px #0000003D;
   border-radius: 2px;
@@ -314,10 +327,49 @@ nav {
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: url(/images/Homeimg.png);
-    height: 359px;
+    min-height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .hero__text {
+    margin: 0;
+    margin-left: auto;
+    margin-top: 200px;
+    padding: 0;
+    width: 50%;
+  }
+  .hero__text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+  .hero__text p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+    margin-bottom: 56px;
+  }
+  .hero .button {
+    padding: 14px 74px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 0;
+    margin-top: 0;
   }
 }
 
@@ -333,11 +385,258 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 200px;
-  margin-top: 170px;
+  margin-top: 100px;
 }
 
 .shields img {
   height: 63px;
   width: 63px;
+}
+
+@media only screen and (min-width: 768px) {
+  .shields {
+    height: 160px;
+    margin-top: 26px;
+  }
+  .shields img {
+    width: 130px;
+    height: 130px;
+  }
+  .shields .shields--main {
+    height: 241px;
+    width: 180px;
+    margin-top: -82px;
+    z-index: 20;
+  }
+  .shields .shields--last {
+    height: 83px;
+  }
+}
+
+.coaches {
+  background-image: url(/images/coaches-bg.png);
+  height: 912px;
+}
+
+.coaches__container {
+  width: 100%;
+  position: relative;
+}
+
+.coaches h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: #787878;
+  text-transform: uppercase;
+  padding: 68px 120px;
+}
+
+.slider {
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 20%;
+  margin-bottom: 60px;
+}
+
+.slider img {
+  height: 96px;
+  width: 96px;
+  mix-blend-mode: luminosity;
+}
+
+.slider .item--active {
+  mix-blend-mode: normal;
+  width: 106px;
+  height: 106px;
+  border: 5.7px solid #2B750A;
+  border-radius: 138px;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.coaches__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 450px;
+  width: 80%;
+  margin: 0 auto;
+  background: #F3F3F3;
+  -webkit-box-shadow: 0px 1px 3px #0000001F;
+          box-shadow: 0px 1px 3px #0000001F;
+}
+
+.coaches__card-text {
+  width: 70%;
+  padding: 36px 114px 49px 54px;
+}
+
+.coaches__card-text h2 {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: #3EA410;
+}
+
+.coaches__card-text h3 {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700i;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #2B750A;
+  margin-bottom: 31px;
+}
+
+.coaches__card-text p {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.coaches__card-text .bold {
+  font-weight: 700;
+  margin-bottom: -20px;
+}
+
+.coaches__card-img {
+  width: 372px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .coaches h1 {
+    margin: 0 auto 46px;
+    padding: 0 44px;
+  }
+  .slider {
+    min-width: 100%;
+    margin: 0 auto 60px;
+  }
+  .slider img:nth-of-type(2) {
+    margin: 0 7px;
+  }
+  .coaches__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .coaches__card-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 262px;
+    width: 100%;
+    padding: 0 16px;
+    background-size: cover;
+    background-position: top center;
+  }
+  .coaches__card-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 46px 16px 50px;
+  }
+}
+
+.testimonials {
+  margin-top: 38px;
+  height: 387px;
+  position: relative;
+}
+
+.testimonials h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 0;
+  color: #787878;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.testimonials__card {
+  background: #F3F3F3;
+  width: 994px;
+  height: 177px;
+  margin: 0 198px;
+}
+
+.testimonials__text {
+  padding: 44px 101px 32px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0;
+  color: #373A3C;
+  text-transform: capitalize;
+}
+
+.quotes p {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 178px;
+  line-height: 238px;
+  letter-spacing: -14.06px;
+  color: #138422;
+}
+
+.quotes .quote--left {
+  -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
+          transform: matrix(-1, 0, 0, -1, 0, 0);
+  position: absolute;
+  top: 50px;
+  left: 190px;
+}
+
+.quotes .quote--right {
+  position: absolute;
+  top: 60px;
+  right: 150px;
 }
 /*# sourceMappingURL=main.css.map */
