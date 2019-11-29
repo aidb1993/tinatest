@@ -1,34 +1,66 @@
+// Variable Declaration
 const items = document.querySelectorAll('.slider__item');
+const dots__item = document.querySelectorAll('.dots__item');
+const cards = document.querySelectorAll('.coaches__card')
 const arrow_next = document.querySelector('#arrow--next');
 const arrow_prev = document.querySelector('#arrow--prev');
 let index = 0;
 
+function globalReset() {
+    items.forEach(item => {
+        item.classList.remove('item--active')
+    })
+    dots__item.forEach(item => {
+        item.classList.remove('dots--active')
+    })
+};
+
+
+function setItems() {
+    globalReset();;
+    items[index].classList.toggle('item--active')
+    dots__item[index].classList.toggle('dots--active')
+}
+
+function Handler(arr) {
+    traversalSet(arr)
+}
+
+
 
 arrow_next.addEventListener('click' , () => {
-   if (index !=(items.length - 1)) {
-    items[index].classList.toggle('item--active')
-    items[index].nextElementSibling.classList.toggle('item--active')
-    index++
-   }
-   else {
-       items[index].classList.toggle('item--active')
-       items[0].classList.toggle('item--active')
-       index = 0;
-   }
-});
-
-arrow_prev.addEventListener('click' , () => {
-    if (index !=0) {
-    items[index].classList.toggle('item--active')
-    items[index].previousElementSibling.classList.toggle('item--active')
-    index--
+    if (index != (items.length - 1)) {
+        index++
+        setItems();
+        
+    } else {
+        index = 0 
+        setItems();
+        
     }
-    else {
-        items[0].classList.toggle('item--active')
-        items[(items.length-1)].classList.toggle('item--active')
-        index = (items.length-1)
+    
+    
+})
+
+arrow_prev.addEventListener('click', () => {
+    if (index != 0) {
+        index-- 
+        setItems();
+    } else {
+        index = (items.length - 1)
+        setItems();
     }
-});
+})
 
+function traversalSet(arr) {
+    const newArr = Array.from(arr)
+    newArr.forEach(item => {
+        item.addEventListener('click', ()=> {
+            index = (newArr.indexOf(item))
+            setItems();
+        } )
+    });
+}
 
-
+Handler(dots__item);
+Handler(items);
