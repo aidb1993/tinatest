@@ -333,7 +333,7 @@ nav {
     position: relative;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    z-index: -2;
   }
   .hero__text {
     margin: 0;
@@ -399,6 +399,7 @@ nav {
   .shields {
     height: 160px;
     margin-top: 26px;
+    overflow: initial;
   }
   .shields img {
     width: 130px;
