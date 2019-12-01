@@ -13,6 +13,9 @@ function globalReset() {
     dots__item.forEach(item => {
         item.classList.remove('dots--active')
     })
+    cards.forEach(item => {
+        item.classList.remove('coaches__card--active')
+    });
 };
 
 
@@ -20,6 +23,7 @@ function setItems() {
     globalReset();;
     items[index].classList.toggle('item--active')
     dots__item[index].classList.toggle('dots--active')
+    cards[index].classList.toggle('coaches__card--active')
 }
 
 function Handler(arr) {
