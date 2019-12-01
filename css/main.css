@@ -161,7 +161,7 @@ nav {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   header {
     position: -webkit-sticky;
     position: sticky;
@@ -509,9 +509,9 @@ nav {
   display: none;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 450px;
+  min-height: 450px;
   width: 100%;
-  max-width: 69%;
+  max-width: 89%;
   margin: 0 auto;
   background: #F3F3F3;
   -webkit-box-shadow: 0px 1px 3px #0000001F;
@@ -560,8 +560,8 @@ nav {
 }
 
 .coaches__card-img {
-  width: 372px;
-  height: 100%;
+  max-width: 372px;
+  max-height: 500px;
   overflow: hidden;
 }
 
@@ -609,6 +609,7 @@ nav {
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    max-width: 100%;
   }
   .coaches__card-img {
     -webkit-box-ordinal-group: 2;
@@ -670,8 +671,8 @@ nav {
 
 .testimonials__card {
   background: #F3F3F3;
-  width: 994px;
-  height: 177px;
+  max-width: 994px;
+  min-height: 177px;
   margin: 0 198px;
 }
 
@@ -707,8 +708,8 @@ nav {
 
 .quotes .quote--right {
   position: absolute;
-  top: 60px;
-  right: 150px;
+  top: 110px;
+  right: 180px;
 }
 
 .quotes__dots {
@@ -732,5 +733,55 @@ nav {
 
 .quotes__dots .quotes__dots__item {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 90%;
+    min-width: 300px;
+    min-height: 314px;
+    max-height: 360px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .testimonials h1 {
+    padding-top: 222px;
+    margin-bottom: 40px;
+  }
+  .testimonials__text {
+    padding: 40px 21px 37px 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+  .quotes .quote--left {
+    top: 280px;
+    left: 10px;
+  }
+  .quotes .quote--right {
+    top: 470px;
+    right: 6px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
