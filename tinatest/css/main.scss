@@ -1050,7 +1050,7 @@ nav {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        height: 1500px;
+        height: 1492px;
         width: 90%;
     }
 
@@ -1117,16 +1117,10 @@ nav {
        margin: 0 auto;
 
        h3 {
-        margin-bottom: 30px;
-        padding-top: 110px;
+           margin-bottom: 30px;
+           padding-top: 70px;
        }
-
-       .teaching-title {
-        margin-bottom: 10px;
-        padding-top: 40px;
-    }
-    }
-  
+   }
    
 
     .facilities__tech-grid {
@@ -1152,5 +1146,10 @@ nav {
             margin-bottom: 0;
         }
     }
+
+    .facilities__tech h3 {
+        margin-bottom: 10px;
+        padding-top: 80px;
+    }
+    
 }
-   
