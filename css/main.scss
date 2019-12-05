@@ -5,6 +5,7 @@
 // 2- General
 // 3- components
     // 3-1 button
+    // 3-2 drawer
 // 4- Navigation
 // 5- Banner
 // 6- Hero
@@ -12,6 +13,7 @@
 // 8- Coaches
 // 9- Testimonials
 // 10- Facilities
+// 11- Tips
 
 // 1- Variables
 
@@ -64,7 +66,97 @@ $shield-width: 130px;
     font-size: 18px;
     font-weight: $font-medium;
 }
-    
+
+// 3-2 drawer
+
+.drawer {
+    width: 384px;
+    background: #2A2A2A;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 10px 0 0 10px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.drawer__title {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFFDE;
+    padding: 29px 26px 24px;
+        h3 {
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
+        i {
+            cursor: pointer;
+            user-select: none;
+        }
+}
+
+.drawer__title-logo {
+    width: 132px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 10px;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+}
+
+.drawer__content {
+    height: 249px;
+    background: #2A2A2A;
+    border-top:1px solid #707070;
+    overflow: scroll;
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.drawer__content--active {
+    display: block;
+}
+
+.drawer__content-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 10px;
+
+    a {
+        font-family: $font-stack;
+        font-weight: $font-medium;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #FFFFFFDE;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+}
+
+.content-item-img {
+    width: 100px;
+    height: 56px;
+       img {
+            object-fit: cover;
+            object-position: center top;
+            height: 100%;
+            width: 100%;
+        }
+}
 
 
 // 4- Navigation
@@ -313,6 +405,7 @@ nav {
         font-weight: $font-medium;
         line-height: 43px;
         font-size: 24px;
+        cursor: pointer;
     }
 }
 
@@ -372,6 +465,7 @@ nav {
         line-height: 43px;
         letter-spacing: 0;
         margin-top: 0;
+        cursor: pointer;
 
     }
     }
@@ -659,6 +753,8 @@ nav {
           }
 
     }
+
+  
 
     .slider img:nth-of-type(2) {
         margin: 0 7px;
@@ -1153,4 +1249,94 @@ nav {
         }
     }
 }
-   
+
+// 11- Tips
+
+.tips__container {
+    height: 920px;
+    background: #373737;
+
+        h1 {
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0;
+            color: #FFFFFFDE;
+            padding: 72px 0 0 120px;
+            margin-bottom: 68px;
+        }
+    }
+
+.tips__player {
+    margin: 0 120px 113px;
+    display: flex;
+    position: relative;
+}
+
+.tips__description {
+    width: 791px;
+    background: #2B2B2B;
+    position: absolute;
+    top: 467px;
+    left: 0;
+    z-index: 100;
+}
+
+.tips__description__text {
+    text-align: left;
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    padding: 25px 0 25px 25px;
+        p{
+            font-weight: $font-medium;
+        }
+}
+
+// Tips Media Queries 
+
+@media only screen and (max-width: 768px) {
+
+.tips__container {
+    height: 100%;
+}
+
+.tips__container h1 {
+    padding-left: 27px;
+    margin-bottom: 39px;
+}
+.tips__player {
+    flex-direction: column;
+    margin: 0;
+}
+
+.tips__description {
+    display: none;
+}
+
+.tips__player-playlist {
+    margin-bottom: 40px;
+}
+
+.drawer {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+
+#tips-video {
+    width: 100%;
+    margin-bottom: 16px;
+
+}
+
+.drawer__title-logo img {
+    height: initial;
+}
+
+}

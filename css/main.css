@@ -37,6 +37,120 @@
   font-weight: 500;
 }
 
+.drawer {
+  width: 384px;
+  background: #2A2A2A;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  margin: 10px 0 0 10px;
+}
+
+.drawer:first-child {
+  margin-top: 0;
+}
+
+.drawer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFFDE;
+  padding: 29px 26px 24px;
+}
+
+.drawer__title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.drawer__title i {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.drawer__title-logo {
+  width: 132px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.drawer__title-logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.drawer__content {
+  height: 249px;
+  background: #2A2A2A;
+  border-top: 1px solid #707070;
+  overflow: scroll;
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.drawer__content--active {
+  display: block;
+}
+
+.drawer__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 10px;
+}
+
+.drawer__content-item a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFFDE;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.content-item-img {
+  width: 100px;
+  height: 56px;
+}
+
+.content-item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  height: 100%;
+  width: 100%;
+}
+
 header {
   background-color: rgba(235, 235, 235, 0.56);
   -webkit-backdrop-filter: blur(10px);
@@ -322,6 +436,7 @@ nav {
   font-weight: 500;
   line-height: 43px;
   font-size: 24px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -370,6 +485,7 @@ nav {
     line-height: 43px;
     letter-spacing: 0;
     margin-top: 0;
+    cursor: pointer;
   }
 }
 
@@ -1153,6 +1269,89 @@ nav {
   }
   .facilities__tech-card:last-child {
     margin-bottom: 0;
+  }
+}
+
+.tips__container {
+  height: 920px;
+  background: #373737;
+}
+
+.tips__container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: #FFFFFFDE;
+  padding: 72px 0 0 120px;
+  margin-bottom: 68px;
+}
+
+.tips__player {
+  margin: 0 120px 113px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.tips__description {
+  width: 791px;
+  background: #2B2B2B;
+  position: absolute;
+  top: 467px;
+  left: 0;
+  z-index: 100;
+}
+
+.tips__description__text {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  padding: 25px 0 25px 25px;
+}
+
+.tips__description__text p {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .tips__container {
+    height: 100%;
+  }
+  .tips__container h1 {
+    padding-left: 27px;
+    margin-bottom: 39px;
+  }
+  .tips__player {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .tips__description {
+    display: none;
+  }
+  .tips__player-playlist {
+    margin-bottom: 40px;
+  }
+  .drawer {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  #tips-video {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .drawer__title-logo img {
+    height: initial;
   }
 }
 /*# sourceMappingURL=main.css.map */
