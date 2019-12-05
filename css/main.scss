@@ -34,7 +34,8 @@ $shield-width: 130px;
 
 .container {
     width: 100%;
-    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 // 3- Components
@@ -120,10 +121,10 @@ $shield-width: 130px;
     overflow: scroll;
     display: none;
 }
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
+// ::-webkit-scrollbar {
+//     width: 0px;  /* Remove scrollbar space */
+// // //     background: transparent;  /* Optional: just make scrollbar invisible */
+// // // }
 
 .drawer__content--active {
     display: block;
@@ -866,12 +867,12 @@ nav {
         transform: matrix(-1, 0, 0, -1, 0, 0);
         position: absolute;
         top: 50px;
-        left: 190px;
+        left: 260px;
     }
     .quote--right {
         position: absolute;
-        top: 55px;
-        right: 200px;
+        top: 75px;
+        right: 250px;
     }
 }
 
@@ -1012,7 +1013,7 @@ nav {
 .facilities__preview-arrow-left {
    position: absolute;
    top: 110px;
-   right: 430px;
+   right: 280px;
    border: 2px solid white;
    border-radius: 50%;
    background-color: #FFFFFF;
@@ -1022,7 +1023,7 @@ nav {
 .facilities__preview-arrow-right {
    position: absolute;
    top: 110px;
-   right: 250px;
+   right: 100px;
    border: 2px solid white;
    border-radius: 50%;
    background-color: #FFFFFF;
@@ -1031,6 +1032,7 @@ nav {
 
 .facilities__preview-text {
     padding-top: 170px;
+    min-width: 300px;
     
     h2{
         text-align: left;
@@ -1053,7 +1055,7 @@ nav {
         line-height: 24px;
         letter-spacing: 0;
         color: #787878;
-        width: 70%;
+        width: 90%;
     }
 }
 
@@ -1270,7 +1272,7 @@ nav {
     }
 
 .tips__player {
-    margin: 0 120px 113px;
+    margin: 0;
     display: flex;
     position: relative;
 }

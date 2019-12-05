@@ -7,7 +7,8 @@
 
 .container {
   width: 100%;
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
@@ -101,13 +102,6 @@
   border-top: 1px solid #707070;
   overflow: scroll;
   display: none;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 .drawer__content--active {
@@ -889,13 +883,13 @@ nav {
           transform: matrix(-1, 0, 0, -1, 0, 0);
   position: absolute;
   top: 50px;
-  left: 190px;
+  left: 260px;
 }
 
 .quotes .quote--right {
   position: absolute;
-  top: 55px;
-  right: 200px;
+  top: 75px;
+  right: 250px;
 }
 
 .quotes__dots {
@@ -1032,7 +1026,7 @@ nav {
 .facilities__preview-arrow-left {
   position: absolute;
   top: 110px;
-  right: 430px;
+  right: 280px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: #FFFFFF;
@@ -1042,7 +1036,7 @@ nav {
 .facilities__preview-arrow-right {
   position: absolute;
   top: 110px;
-  right: 250px;
+  right: 100px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: #FFFFFF;
@@ -1051,6 +1045,7 @@ nav {
 
 .facilities__preview-text {
   padding-top: 170px;
+  min-width: 300px;
 }
 
 .facilities__preview-text h2 {
@@ -1074,7 +1069,7 @@ nav {
   line-height: 24px;
   letter-spacing: 0;
   color: #787878;
-  width: 70%;
+  width: 90%;
 }
 
 .facilites__tech {
@@ -1289,7 +1284,7 @@ nav {
 }
 
 .tips__player {
-  margin: 0 120px 113px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
