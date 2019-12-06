@@ -15,6 +15,8 @@
 // 10- Facilities
 // 11- Tips
 // 12- Instagram
+// 13- Footer
+// 14- Footer NavBar
 
 // 1- Variables
 
@@ -30,7 +32,9 @@ $shield-width: 130px;
     box-sizing: border-box;
 }
 
-
+body  * {
+    z-index: 0 ;
+}
 
 .container {
     width: 100%;
@@ -45,7 +49,7 @@ $shield-width: 130px;
 .button {
     padding: 15px 27px 14px 33px;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer !important;
     text-align: left;
     letter-spacing: 0;
     text-transform: uppercase;
@@ -255,6 +259,7 @@ nav {
          font-family: $font-stack;
          font-weight: $font-medium;
          font-size: 14px;
+         cursor: pointer;
     }
 
     &--book {
@@ -415,7 +420,6 @@ nav {
 
 @media only screen and (min-width: 768px) {
     .hero {
-        background-image: url(/images/Homeimg.png);
         min-height: 800px;
         background-size:cover;
         background-repeat: no-repeat;
@@ -423,7 +427,7 @@ nav {
         margin: 0;
         padding: 0;
         z-index: -2;
-        
+        transition: all 1s linear 1s;
     
 
         &__text {
@@ -470,6 +474,14 @@ nav {
         cursor: pointer;
 
     }
+    }
+    
+    .hero-slider-0 {
+        background-image: url(/images/Homeimg.png);
+    }
+
+    .hero-slider-1 {
+        background-image: url(/images/hero-slider-2.png);
     }
 }
 
@@ -1283,7 +1295,7 @@ nav {
     position: absolute;
     top: 467px;
     left: 0;
-    z-index: 100;
+    z-index: 1;
 }
 
 .tips__description__text {
@@ -1352,4 +1364,182 @@ nav {
     width:100%;
     border:0;
     overflow:hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .instagram {
+        display: none;
+    }
+}
+
+// 13- Footer
+
+.footer__container {
+    height: 292px;
+    background-color: #F6F6F6;
+}
+
+.footer__content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        text-align: left;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #3EA410;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    h5 {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    li {
+        margin-bottom: 14px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: left;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #222222;
+        text-transform: lowercase;
+        opacity: 0.6;
+    }
+}
+
+.footer-logo {
+    width: 282px;
+    height: 85px;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.footer__content-logo {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    text-align: left;
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 24px;
+    letter-spacing: 0;
+    color: #222222;
+
+        h4 {
+            font-weight: 500;
+            padding-top: 10px;
+        }
+}
+
+.footer__content-social {
+    margin-top: 77px;
+}
+
+.footer__content-contact {
+    margin-top: 47px;
+}
+
+
+// Footer Media Query
+
+@media only screen and (max-width: 768px) {
+    .footer__container {
+        height: 100%;
+    }
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__content-logo {
+        margin-top: 54px;
+    }
+
+    .footer__content-social {
+        h5 {
+            display: none;
+        }
+        h2 {
+            text-align: left;
+        }
+
+        li {
+            margin-right: 16px;
+        }
+        
+        margin-top: 77px;
+        margin-right: auto;
+       
+    }
+
+    .content-social__items {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+// 14- Footer NavBar
+
+.footer-nav {
+    height: 80px;
+}
+
+.footer-nav__container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 33px 0 28px 0;
+    width: 60%;
+    margin: 0 auto;
+
+        li {
+            list-style: none;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+                    font-family: $font-stack;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0;
+                    color: rgba(0, 0, 0 , .7);
+                }
+        }
+}
+
+// Footer-Nav Media Querie 
+
+@media only screen and (max-width: 768px) {
+    .footer-nav__container {
+        width: 100%;
+    }
 }
