@@ -1,0 +1,26 @@
+.button {
+    padding: 15px 27px 14px 33px;
+    text-decoration: none;
+    cursor: pointer !important;
+    text-align: left;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.button--transparent {
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 15px 45px 11px 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: left;
+    font-family:$font-stack ;
+    font-size: 18px;
+    font-weight: $font-medium;
+}

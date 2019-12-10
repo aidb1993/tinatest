@@ -11,28 +11,29 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i&display=swap" rel="stylesheet">
     <!-- CSS -->
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/vendors/reset.css">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/vendors/slick.css">
+    <link rel="stylesheet" href="css/vendors/slick-theme.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Pages/home.css">
     <title>TinaTombs Golf</title>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header --> 
     <header>
         
         <div class="main">
             <img src="images/logo-header.png" alt="TinaTombs Logo" class="logo">
-            <a class="toggle" id="toggle" href="#"><i class="material-icons md-24 md-dark">menu</i></a>
+            <a class="toggle" id="toggle" href="/"><i class="material-icons md-24 md-dark">menu</i></a>
          </div>
     <!-- Navigation -->
         <nav>
             <ul class="nav__links">
-                <li class="nav__links__link"><a href="#">About</a></li>
+                <li class="nav__links__link"><a href="/about.html">About</a></li>
                 <li class="nav__links__link"><a href="#">Prices</a></li>
                 <li class="nav__links__link"><a href="#">Shop</a></li>
                 <li class="nav__links__link"><a href="#">Events</a></li>
@@ -109,7 +110,7 @@
                         <h2>John Doe</h2>
                         <h3>Coach</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                        <a class="coaches--special" href="#">Learn more about our Coach Program</a>
+                        <a class="coaches--special coaches-toggler">Learn more about our Coach Program</a>
                         <div class="coaches__card-rec">
                             <div class="coaches__card-rec-img">
                                 <img src="images/coaches-coach1.png" alt="">
@@ -126,7 +127,7 @@
                         <h2>Tiger Woods</h2>
                         <h3>Coach</h3>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                        <a class="coaches--special" href="#">Learn more about our Coach Program</a>
+                        <a class="coaches--special coaches-toggler">Learn more about our Coach Program</a>
                     <div class="coaches__card-rec">
                         <div class="coaches__card-rec-img">
                             <img src="images/coaches-coach1.png" alt="">
@@ -136,6 +137,20 @@
                     </div>
                     <div class="coaches__card-img">
                         <img src="images/coaches-coach-tiger.jpg" alt="">
+                    </div>
+                </div>
+                <div class="coaches__program modal">
+                    <div class="container"></div>
+                        <div class="modal-title">
+                            <h1>Our Coaching Program</h1>
+                            <h2 class="coaches-x" style="cursor: pointer;">X</h2>
+                        </div>
+                        <div class="program-container">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            <div class="program-img">
+                                <img src="/images/program-img.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,6 +235,104 @@
                                 <div class="facilities__tech-coach"><img class="facilities__tech-coach" src="images/coaches-coach1.png" alt=""></div>
                                 <div class="facilities__tech-coach"><img src="images/coaches-coach2.png" alt=""></div>
                                 <div class="facilities__tech-coach"><img src="images/coaches-coach3.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="modals">
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>Blast</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech1.png" alt="">
+                                    </div>
+                                    <p>Blast Golf is the industry’s most accurate stroke and swing analyzer designed to provide you with real-time feedback. Simply attach the sensor to your putter or club and start swinging. Information is automatically captured and sent to your smart phone or tablet in the form of easy to understand metrics. In-app training videos provide you with tips, drills, and actionable insights to help you improve timing, tempo, face rotation, and more. Blast’s patented Smart Video Capture TM technology automatically analyzes and clips your video to create a series of video highlights synched with your metrics, allowing you or your instructor to visually identify your strengths and areas for improvement.<br> 
+                                    <br>
+                                    The Blast Golf stroke and swing analyzer (sensor) easily and securely attaches to the grip of nearly any regulation putter, driver, iron or wedge. The sensor transmits metrics to your iPhone, iPad, or Android phone via Low Energy Bluetooth. <br> 
+                                    <br>
+                                    The stroke and swing metrics captured allow you to analyze and improve your timing, tempo,face rotation, and much more. One-touch access to video highlights, metrics, and performance history – components of your personal Swing DNATM <br>
+                                    <br>
+                                    In-app training videos provide you with tips, drills, and actionable insights to help you improve. <br>
+                                    <br>       
+                                    Smart Video CaptureTM automatically analyzes and clips your video to create a series of video highlights synched with your metrics. The app tracks your metrics and helps you identify trends. The sensor stores your actions in offline mode when your mobile phone is out of range. Video Analysis tool that allows you to draw and add voice overs to your Blast Videos.</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
+                            </div>
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>Foresight GCQuad</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech2.png" alt="">
+                                    </div>
+                                    <p>One of the most versatile launch Monitors available today. It has 4 cameras, a large outdoor viewer display with measurements going to the cloud to view later. The QUAD measures clubface with path to face measurements, and also has a great putting analysis tool.</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
+                            </div>
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>FLIGHTSCOPE X3 LAUNCH MONITOR</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech3.png" alt="">
+                                    </div>
+                                    <p>FlightScope’s new innovative component for the X3 tracking radar gives users the ability to configure environmental conditions, without physically changing locations – meaning golfers who typically practice in flat, low altitudes, and vice versa, can now practice smarter and see how their shot would match up against an entirely different environmental climate. <br> 
+                                    <br>
+                                    FlightScope’s Environmental Optimizer technology now allows players to practice for a tournament’s specific terrain, without having to physically leave their home course. This feature gives golfers instant feedback on their smart phone or tablet and allows users to configure the impact of several environmental conditions, including: altitude, humidity, relative landing height, air temperature, wind speed and wind direction.</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
+                            </div>
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>K VEST KMOTION 3D MOTION ANALYSIS</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech4.png" alt="">
+                                    </div>
+                                    <p>Evaluations, coaching and training tools all in 3D motion analysis. Biofeedback provides training that translates instruction into feels. It is perfect practice every time.<br>
+                                    <br>
+                                    Real time visual and auditory feedback <br>
+                                    <br>
+                                    Titleist 3D software for swing efficiency <br>
+                                    <br>
+                                    3D Swing Analysis for comparison with PGA/LPGA average <br>
+                                    <br>
+                                    Video Analysis in single or split-screen views for analysis using drawing tool</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
+                            </div>
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>SMART2MOVE FORCE PLATES</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech5.png" alt="">
+                                    </div>
+                                    <p>Learn how to generate more clubhead speed and hit the ball further - by maximizing your pressure and force. The S2M plates measure both pressure and force (force is how you generate clubhead speed) GRF Lateral, Rotation, and vertical force. BodiTrac does not measure these. S2M is also 240 HRTZ (FPS) 4 times what BodiTrac measures.</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
+                            </div>
+                            <div class="modal modal__facilities">
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h2>SMART2MOVE FORCE PLATES</h2>
+                                        <a class="modal-x">X</a>
+                                    </div>
+                                    <div class="tech-modal-img">
+                                        <img src="/images/facilities-tech6.png" alt="">
+                                    </div>
+                                    <p>Learn how to generate more clubhead speed and hit the ball further - by maximizing your pressure and force. The S2M plates measure both pressure and force (force is how you generate clubhead speed) GRF Lateral, Rotation, and vertical force. BodiTrac does not measure these. S2M is also 240 HRTZ (FPS) 4 times what BodiTrac measures.</p>
+                                    <a class="modal-close">Close</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -489,7 +602,7 @@
     <section class="footer-nav">
         <div class="container">
             <ul class="footer-nav__container">
-                <li><a href="#">About</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="#">Prices</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Shows</a></li>
@@ -509,6 +622,9 @@
     <!-- Slider -->
     <script src="js/slider.js"></script>
 
+    <!-- coaches modal -->
+    <script src="/js/coaches_modal.js"></script>
+
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 
@@ -519,6 +635,9 @@
 
     <!-- Testimonials Carrousel -->
     <script src="js/testimonial__carrousel.js"></script>
+
+    <!-- Facilities Modal -->
+    <script src="/js/facilities__modal.js"></script>
     
     <!-- Tips Scripts -->
     <script src="js/tips__toggler.js"></script>
