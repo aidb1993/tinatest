@@ -355,7 +355,7 @@
   }
   .box-1, .box-2 {
     min-height: 143px;
-    width: 382px;
+    max-width: 382px;
   }
   .box-1 h2, .box-2 h2 {
     text-align: center;
