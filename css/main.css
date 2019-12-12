@@ -538,6 +538,7 @@ nav {
 
 .footer__content-social {
   margin-top: 77px;
+  margin-right: auto;
 }
 
 .footer__content-contact {
@@ -559,7 +560,6 @@ nav {
   }
   .footer__content-social {
     margin-top: 77px;
-    margin-right: auto;
   }
   .footer__content-social h5 {
     display: none;
