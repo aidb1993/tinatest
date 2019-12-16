@@ -42,6 +42,25 @@ body * {
   font-weight: 500;
 }
 
+.button--academy {
+  background: #3EA410;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button--book {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
 .drawer {
   width: 384px;
   background: #2A2A2A;
@@ -345,25 +364,6 @@ nav {
   top: 30%;
 }
 
-.button--academy {
-  background: #3EA410;
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.button--book {
-  background: #FFFFFF;
-  color: #000000;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  width: 100%;
-  text-align: center;
-}
-
 @media only screen and (min-width: 900px) {
   header {
     position: -webkit-sticky;
@@ -428,6 +428,9 @@ nav {
     color: rgba(0, 0, 0, 0.53);
   }
   .nav__links__link a:hover {
+    color: black;
+  }
+  .nav--active a {
     color: black;
   }
   .button {
@@ -529,6 +532,7 @@ nav {
   letter-spacing: 24px;
   letter-spacing: 0;
   color: #222222;
+  margin-right: auto;
 }
 
 .footer__content-logo h4 {

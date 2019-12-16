@@ -24,3 +24,25 @@
     font-size: 18px;
     font-weight: $font-medium;
 }
+
+.button{
+
+    &--academy {
+         background: #3EA410;
+         color: #FFFFFF;
+         font-family: $font-stack;
+         font-weight: $font-medium;
+         font-size: 14px;
+         cursor: pointer;
+    }
+    
+    &--book {
+        background: #FFFFFF;
+        color: #000000;
+        font-family: $font-stack;
+        font-weight: $font-medium;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    }

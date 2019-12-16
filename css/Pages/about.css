@@ -40,7 +40,7 @@
 }
 
 .about-hero-text h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -115,7 +115,7 @@
 
 .quotes p {
   text-align: left;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 178px;
   line-height: 238px;
@@ -261,8 +261,7 @@
 
 .awards-box h2 {
   text-align: center;
-  font: Bold 65px/86px Playfair Display;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 65px;
   line-height: 86px;
@@ -359,8 +358,7 @@
   }
   .box-1 h2, .box-2 h2 {
     text-align: center;
-    font: Bold 65px/86px Playfair Display;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 86px;

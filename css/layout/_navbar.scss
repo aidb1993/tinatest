@@ -83,27 +83,7 @@ top:30%;
 
 
 
-.button{
 
-&--academy {
-     background: #3EA410;
-     color: #FFFFFF;
-     font-family: $font-stack;
-     font-weight: $font-medium;
-     font-size: 14px;
-     cursor: pointer;
-}
-
-&--book {
-    background: #FFFFFF;
-    color: #000000;
-    font-family: $font-stack;
-    font-weight: $font-medium;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-}
-}
 
 // Navigation Media Queries
 // laptop
@@ -161,6 +141,11 @@ header {
         color: rgba(0, 0, 0 , 1);
     }
 
+    
+}
+
+.nav--active a {
+    color: rgba(0, 0, 0 , 1);
 }
 
 
