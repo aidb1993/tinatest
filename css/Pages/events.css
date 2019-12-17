@@ -9,6 +9,7 @@
   .events-hero {
     height: 349px;
     width: 100%;
+    background-position: center right;
   }
 }
 
@@ -263,6 +264,7 @@
 
 .upcoming-events .container {
   max-width: 389px;
+  margin: 0 auto;
 }
 
 .upcoming-events h1 {
@@ -583,6 +585,7 @@
 @media only screen and (max-width: 768px) {
   .past-events .container {
     max-width: 389px;
+    margin: 0 auto;
   }
   .past-events .container h3 {
     font-family: "Montserrat", sans-serif;

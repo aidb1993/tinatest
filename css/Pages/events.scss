@@ -21,6 +21,7 @@
     .events-hero {
         height: 349px;
         width: 100%;
+        background-position: center right;
     }
 
     
@@ -258,6 +259,7 @@
 
     .container {
         max-width: 389px;
+        margin: 0 auto;
     }
 
         h1 {
@@ -549,6 +551,7 @@
 
 .past-events .container {
     max-width: 389px;
+    margin: 0 auto;
 
     h3 {
         font-family: $font-stack;
