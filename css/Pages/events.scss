@@ -546,6 +546,11 @@
     letter-spacing: 0;
     color: #2B750A;
     margin-bottom: 60px;
+    text-decoration: none;
+}
+
+.past-events-grid-mobile {
+    display: none;
 }
 
 // Past Events Media Query
@@ -567,6 +572,10 @@
 
 .past-events-grid {
     display: none;
+}
+
+.past-events-grid-mobile {
+    display: initial;
 }
 
 .events-grid-mobile-main {
