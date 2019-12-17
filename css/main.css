@@ -455,6 +455,8 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 389px;
+  margin: 0 auto;
 }
 
 .footer__content h2 {
