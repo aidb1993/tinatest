@@ -247,7 +247,7 @@
   mix-blend-mode: normal;
   width: 106px;
   height: 106px;
-  border: 5.7px solid #2B750A;
+  border: 5.7px solid #3EA410;
   border-radius: 138px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -280,7 +280,7 @@
 }
 
 .coaches__dots .dots--active {
-  color: #2B750A;
+  color: #3EA410;
 }
 
 .coaches__dots .dots__item {
@@ -318,7 +318,7 @@
 .coaches__card-text h3 {
   text-align: left;
   font-family: 'Playfair Display', serif;
-  font-weight: 700i;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0;
@@ -558,9 +558,9 @@
 
 .testimonials__card {
   background: #F3F3F3;
-  max-width: 994px;
+  width: 90%;
   min-height: 177px;
-  margin: 0 198px;
+  margin: 0 auto;
   display: none;
 }
 
@@ -596,14 +596,14 @@
   -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
           transform: matrix(-1, 0, 0, -1, 0, 0);
   position: absolute;
-  top: 50px;
-  left: 260px;
+  top: 40px;
+  left: 280px;
 }
 
 .quotes .quote--right {
   position: absolute;
-  top: 75px;
-  right: 250px;
+  top: 55px;
+  right: 290px;
 }
 
 .quotes__dots {
@@ -622,7 +622,7 @@
 }
 
 .quotes__dots .dots--active {
-  color: #2B750A;
+  color: #3EA410;
 }
 
 .quotes__dots .quotes__dots__item {
@@ -700,7 +700,7 @@
   color: #787878;
   text-transform: uppercase;
   padding-top: 77px;
-  padding-right: 180px;
+  padding-right: 100px;
 }
 
 .facilites__card {
