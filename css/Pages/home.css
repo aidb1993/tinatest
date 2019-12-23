@@ -716,6 +716,7 @@
   width: 50%;
   margin: 0 30px 82px 101px;
   position: relative;
+  display: none;
 }
 
 .facilities__preview-img {
@@ -784,6 +785,10 @@
   letter-spacing: 0;
   color: #787878;
   width: 90%;
+}
+
+.facilities__preview--active {
+  display: initial;
 }
 
 .facilites__tech {

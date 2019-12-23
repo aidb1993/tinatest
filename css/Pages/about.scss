@@ -264,18 +264,20 @@
 }
 
 .awards-boxes {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 24px;
     column-gap: 29px;
+    margin-bottom: 20px;
 
 }
 
 .awards-box {
-    max-width: 282px;
-    min-width: 230px;
-    height: 195px;
+    // max-width: 282px;
+    // min-width: 230px;
+    width: 282px;
+    height: 175px;
     background: rgba(62, 164, 16, .75);
     margin: 0 auto;
     box-sizing: border-box;
@@ -311,37 +313,63 @@
     background: rgba(62, 164, 16, .6);
 }
 
-.awards-box--crop1 {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
-    max-width: 342px;
-    min-width: 310px;
+.awards-boxes--active {
+    display: grid;
+}
 
-       h3 {
-            width: 70%;
-            margin: 0 auto;
+// .awards-box--crop1 {
+//     clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+//     max-width: 342px;
+//     min-width: 310px;
+
+//        h3 {
+//             width: 70%;
+//             margin: 0 auto;
+//         }
+// }
+// .awards-box--crop4 {
+//     clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
+//     max-width: 342px;
+//     min-width: 310px;
+
+// }
+// .awards-box--crop5 {
+//     clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
+//     max-width: 342px;
+//     min-width: 310px;
+// }
+// .awards-box--crop8 {
+//     clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+//     max-width: 342px;
+//     min-width: 320px;
+
+//     h3 {
+//         width: 60%;
+//         margin: 0 auto;
+//     }
+// }
+
+.boxes-desk-dots {
+        
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 20%;
+    margin: 0 auto;
+    color: rgba(128, 128, 128 , .8);
+    
+        i {
+            cursor: pointer;
+            font-size: 20px;
         }
 }
-.awards-box--crop4 {
-    clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
-    max-width: 342px;
-    min-width: 310px;
 
+.boxes-desk-dot--active {
+    color: $primary-color;
 }
-.awards-box--crop5 {
-    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
-    max-width: 342px;
-    min-width: 310px;
-}
-.awards-box--crop8 {
-    clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
-    max-width: 342px;
-    min-width: 320px;
 
-    h3 {
-        width: 60%;
-        margin: 0 auto;
-    }
-}
+
 
 // Awards Media Queries
 
@@ -369,6 +397,14 @@
 
 
     .box-mobile {
+        display: none;
+    }
+
+    .boxes-desk-dots {
+        display: none;
+    }
+
+    .awards-boxes--active {
         display: none;
     }
 

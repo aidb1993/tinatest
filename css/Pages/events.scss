@@ -12,8 +12,9 @@
 .events-hero {
     background-image: url(/images/events-hero-bg.png);
     background-size: cover;
-    height: 533px;
+    height: 600px;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 // Events Media Querie
@@ -31,7 +32,7 @@
 // 2- Main Event
 .events-main {
     height: 448px;
-    
+    background-color: #F5F5F5;
 }
 
 
@@ -152,15 +153,15 @@
     
     .events-link {
         text-align: left;
-        text-decoration: underline;
         font-family: $font-stack;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 24px;
+        line-height: 43px;
         letter-spacing: 0;
-        color: #2B750A;
+        color: #3EA410;
         margin-right: 34px;
         margin-left: -34px;
+        text-decoration: none;
     }
 
 
@@ -180,7 +181,7 @@
 
 @media only screen and (max-width: 768px) {
     .events-main {
-        height: 875px;
+        height: 100%;
         
     }
 
@@ -255,7 +256,7 @@
 
 .upcoming-events {
     background-color: #F5F5F5;
-    height: 1539px;
+    height: 1240px;
     padding-bottom: 87px;
 
     
@@ -280,6 +281,8 @@
     display: flex;
     box-shadow: 0px 3px 6px #00000029;
     margin-bottom: 24px;
+    width: 1018px;
+    height: 319px;
 }
 
 .upcoming-card-container {
@@ -288,8 +291,8 @@
 }
 
 .upcoming-card-img {
-    max-width: 408px;
-    height: 418px;
+    max-width: 320px;
+    height: 320px;
 
         img {
             object-fit: cover;
@@ -300,7 +303,9 @@
 
 .upcoming-card-content {
     width: 636px;
-    padding-top: 37px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
     
     h2{
             text-align: left;
@@ -332,7 +337,11 @@
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0;
-            color: #787878;
+            color: #3EA410;
+
+                div {
+                    color: #787878;
+                }
         }
 
         i{
@@ -365,31 +374,41 @@
 }
 
 .upcoming-card-buttons{
-    margin: 0 auto;
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin-top: -78px;
 
     .button {
         font-size: 24px;
+        padding: 16px 30px 13px;
+        font-family: $font-stack;
+        font-weight: $font-medium;
+        font-size: 14px;
+        line-height: 26px;
+        margin-left: 34px;
     }
 }
 
 .upcoming-link , .upcoming-read {
-        text-decoration: underline;
         font-family: $font-stack;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 14px;
+        line-height: 26px;
         letter-spacing: 0;
-        color: #2B750A;
+        color: #3EA410;
+        text-decoration: none;
+        text-transform: uppercase;
 }
 
 .upcoming-read {
     padding-top: 30px;
     display: flex;
     justify-content: center;
+    color: #2B750A;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 // Upcoming Events Media Query
@@ -406,10 +425,19 @@
 
     .upcoming-card {
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 23px;
+
+            &:last-of-type {
+                margin-bottom: 65px;
+            }
     }
 
     .upcoming-card-img {
         height: 194px;
+        max-width: 100%;
     }
 
     .upcoming-card-content{
@@ -417,6 +445,14 @@
 
         h2, p {
             text-align: center;
+        }
+
+        h2 {
+            order: 2;
+        }
+
+        p {
+            order: 3;
         }
         
     }
@@ -427,6 +463,11 @@
 
     .upcoming-card-buttons .button {
         display: none;
+    }
+
+    .upcoming-card-buttons {
+        order: 4;
+        margin: 0 auto;
     }
 
     .upcoming-read {
@@ -446,6 +487,26 @@
 
     .upcoming-link{
         margin-bottom: 15px;
+        text-decoration: underline;
+        color: #2B750A;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .upcoming-card-content-date {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        order: 1;
+        i{
+            display: none;
+        }
+    }
+
+    .content-address {
+        display: none;
     }
     
 }
@@ -453,6 +514,9 @@
 // Past Events Section 
 
 .past-events {
+    
+    width: 1200px;
+    margin: 0 auto;
     h1 {
         font-family: $font-stack;
         font-weight: 700;
@@ -464,6 +528,9 @@
         padding-top: 52px;
         text-align: center;
         margin-bottom: 16px;
+    }
+    img {
+        position: relative;
     }
 }
 
@@ -484,36 +551,53 @@
 }
 
 .past-main-img{
-    width: 672px;
-    height: 510px;
+    width: 594px;
+    height: 594px;
     margin-right: 18px;
+    position: relative;
 
         img {
             object-fit: cover;
             width: 100%;
             height: 100%;
         }
+
+        &:hover .past-img-hover  {
+            display: block;
+        }
 }
 
+
 .side-grid-img {
-    width: 246px;
-    height: 203px;
+    width: 288px;
+    height: 288px;
+    position: relative;
 
         img {
             object-fit: cover;
             width: 100%;
             height:100%
         }
+
+        &:hover .past-img-hover  {
+            display: block;
+        }
 }
 
 .side-grid-img-lg {
-    width: 510px;
-    height: 246px;
+    width: 588px;
+    height: 294px;
+    position: relative;
 
         img{
             object-fit: cover;
             width: 100%;
             height: 100%;
+        }
+
+        &:hover .past-img-hover  {
+            display: block;
+            transition: all 4s ease-in 1s;
         }
 }
 
@@ -528,11 +612,11 @@
 
 .aside {
     display: flex;
-    margin-bottom: 38px;
+    margin-bottom: 12px;
 }
 
 .aside div:first-of-type {
-    margin-right: 18px;
+    margin-right: 12px;
 }
 
 .past-gallery {
@@ -553,6 +637,40 @@
     display: none;
 }
 
+.past-img-hover {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 0px 0px 4px 4px;
+    padding: 8px 26px 14px 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    transition: all 4s ease-in 1s;
+    
+    h3 {
+        text-align: left;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0;
+        color: #FFFFFF;
+    }
+
+    p {
+        text-align: left;
+        font-family: $font-stack;
+        font-weight: $font-medium;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #FFFFFF;
+    }
+
+        
+}
+
+
 // Past Events Media Query
 
 @media only screen and (max-width: 768px) {
@@ -568,6 +686,10 @@
         letter-spacing: 0;
         color: #202020;
     }
+}
+
+.past-events {
+    max-width: 100%;
 }
 
 .past-events-grid {
@@ -623,6 +745,7 @@
 
 .past-gallery {
     justify-content: center;
+    text-decoration: underline;
 }
 
 

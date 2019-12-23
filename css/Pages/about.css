@@ -238,8 +238,7 @@
 }
 
 .awards-boxes {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto;
@@ -247,12 +246,12 @@
   row-gap: 24px;
   -webkit-column-gap: 29px;
           column-gap: 29px;
+  margin-bottom: 20px;
 }
 
 .awards-box {
-  max-width: 282px;
-  min-width: 230px;
-  height: 195px;
+  width: 282px;
+  height: 175px;
   background: rgba(62, 164, 16, 0.75);
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -289,42 +288,34 @@
   background: rgba(62, 164, 16, 0.6);
 }
 
-.awards-box--crop1 {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
-  max-width: 342px;
-  min-width: 310px;
+.awards-boxes--active {
+  display: -ms-grid;
+  display: grid;
 }
 
-.awards-box--crop1 h3 {
-  width: 70%;
+.boxes-desk-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
   margin: 0 auto;
+  color: rgba(128, 128, 128, 0.8);
 }
 
-.awards-box--crop4 {
-  -webkit-clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
-  max-width: 342px;
-  min-width: 310px;
+.boxes-desk-dots i {
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.awards-box--crop5 {
-  -webkit-clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
-  max-width: 342px;
-  min-width: 310px;
-}
-
-.awards-box--crop8 {
-  -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
-  max-width: 342px;
-  min-width: 320px;
-}
-
-.awards-box--crop8 h3 {
-  width: 60%;
-  margin: 0 auto;
+.boxes-desk-dot--active {
+  color: #3EA410;
 }
 
 @media only screen and (max-width: 768px) {
@@ -350,6 +341,12 @@
             flex-direction: column;
   }
   .box-mobile {
+    display: none;
+  }
+  .boxes-desk-dots {
+    display: none;
+  }
+  .awards-boxes--active {
     display: none;
   }
   .box-1, .box-2 {
