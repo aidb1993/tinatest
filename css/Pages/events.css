@@ -4,6 +4,8 @@
   height: 600px;
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -17,16 +19,26 @@
 .events-main {
   height: 448px;
   background-color: #F5F5F5;
+  margin-top: -350px;
+  z-index: -2;
+}
+
+.events-deco {
+  height: 40px;
+  width: 100%;
+  background-color: #3EA410;
+  margin-bottom: 142px;
 }
 
 .main-card {
   padding-bottom: 44px;
   width: 996px;
   margin: 0 auto;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 1px 1px 6px #00000029;
           box-shadow: 1px 1px 6px #00000029;
-  margin-top: -140px;
+  z-index: 2;
+  position: relative;
 }
 
 .main-card h1 {
@@ -193,6 +205,10 @@
 @media only screen and (max-width: 768px) {
   .events-main {
     height: 100%;
+    margin-top: 0;
+  }
+  .events-deco {
+    display: none;
   }
   .main-card {
     padding-bottom: 44px;
@@ -260,8 +276,9 @@
 
 .upcoming-events {
   background-color: #F5F5F5;
-  height: 1240px;
+  height: 1440px;
   padding-bottom: 87px;
+  padding-top: 200px;
 }
 
 .upcoming-events h1 {
@@ -274,7 +291,7 @@
   text-transform: uppercase;
   padding-top: 44px;
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 31px;
 }
 
 .upcoming-card {
@@ -450,6 +467,7 @@
 @media only screen and (max-width: 768px) {
   .upcoming-events {
     height: 100%;
+    padding-top: 0;
   }
   .upcoming-events .container {
     max-width: 360px;
@@ -560,7 +578,7 @@
   text-transform: uppercase;
   padding-top: 52px;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 31px;
 }
 
 .past-events img {

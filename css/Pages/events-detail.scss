@@ -1,0 +1,309 @@
+// =========================
+// Table of Contents
+// =========================
+// 1- Hero
+// 2- Main Card
+// 3- Also Like
+
+@import '../abstracts/variables';
+
+// 1- Hero
+
+.events-container {
+    position: relative;
+    z-index: 0;
+}
+
+.events-container .container {
+    position: relative;
+    max-width: 1400px;
+}
+
+.events-layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    height: 600px;
+    width: 100%;
+    z-index: 0;
+}
+
+.events-hero {
+    position: relative;
+    z-index: 0;
+    background-image: url(/images/events-eventlogo1.png);
+}
+
+.events-title-text {
+    margin: 0 auto;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+
+        h1 {
+            text-align: center;
+            font-family: $playfair;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            font-family: $font-stack;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0;
+            color: #FFFFFF;
+        }
+}
+
+// Hero Media Querie 
+
+@media only screen and (max-width: 768px) {
+    .events-container {
+        margin-bottom: 150px;
+    }
+    .events-hero {
+        height: 110px;
+    }
+    .events-layer {
+        height: 110px;
+    }
+    .events-title-text {
+        h1{
+            text-align: center;
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0;
+            color: #2B750A;
+        }
+        h2{
+            text-align: center;
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0;
+            color: #626262;
+        }
+    }
+}
+
+// 2- Main Card
+
+.events-main-card {
+    background-color: #F5F5F5;
+    height: 1560px;
+    margin-top: -350px;
+    z-index: -1;
+    margin-bottom: 160px;
+    
+}
+
+.main-card-container {
+    width: 996px;
+    margin: 0 auto;
+    height: 1644px;
+    background-color:#FFFFFF ;
+    z-index: 1;
+    position: absolute;
+    top: 380px;
+    right: 350px;
+    padding: 46px 112px 40px 96px;
+    border-bottom: 2px solid rgb(167, 163, 163);
+    
+}
+
+.card-content-breadcrump{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 41px;
+
+    &>* {
+        margin-right: 10px;
+    }
+
+    & h3:last-of-type {
+        color: #2B750A;
+        font-weight: 700;
+    }
+
+    h3, i{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0;
+        color: #626262;
+    }
+
+    h3 {
+        font-family: $font-stack;
+    }
+
+}
+
+.card-content-info {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+        i {
+            font: Regular 32px/35px Material Design Icons;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 35px;
+            letter-spacing: 0;
+            color: #3EA410;
+            margin-bottom: 19px;
+        }
+
+        h2, span {
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+            color: #00000066
+        }
+
+        span {
+            font-weight: 600;
+        }
+
+        .content--special {
+            font: Bold 16px/20px Montserrat;
+            letter-spacing: 0;
+            color: #3EA410
+        }
+
+        
+}
+
+.card-content-text {
+    width: 100%;
+    font-family: $font-stack;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #202020;
+    margin-bottom: 40px;
+
+        h3 span {
+            font-weight: 500;
+        }
+}
+
+.content-video {
+    height: 452px;
+    background: #979797 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    margin-bottom: 40px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+        i{
+            color: white;
+            font-size: 200px;
+        }
+}
+
+.content-map {
+    height: 480px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 36px;
+
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+}
+
+.events-reservation {
+    display: flex;
+    justify-content: center;
+}
+
+// Main Card media Querie 
+@media only screen and (max-width: 768px) {
+    .events-main-card {
+        margin-top: 0;
+    }
+    .events-container {
+        margin-bottom: 180px;
+    }
+    .main-card-container {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .main-card-content {
+        width: 100%;
+    }
+    .card-content-breadcrump {
+        display: none;
+    }
+    .card-content-info {
+
+        i {
+            display: none;
+        }
+
+        .content--special {
+            color: #00000066;
+        }
+    }
+    .card-content-text{
+        text-align: center;
+    }
+    .content-video {
+        width: 100%;
+        height: 215px;
+    }
+    .content-map {
+        height: 509px;
+        width: 100%;
+    }
+}
+
+
+
+// 3- Also Like 
+
+.events-like {
+    margin-bottom: 100px;
+
+    h2{
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #787878;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+}
+

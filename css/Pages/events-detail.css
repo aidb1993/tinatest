@@ -1,0 +1,312 @@
+.events-container {
+  position: relative;
+  z-index: 0;
+}
+
+.events-container .container {
+  position: relative;
+  max-width: 1400px;
+}
+
+.events-layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  height: 600px;
+  width: 100%;
+  z-index: 0;
+}
+
+.events-hero {
+  position: relative;
+  z-index: 0;
+  background-image: url(/images/events-eventlogo1.png);
+}
+
+.events-title-text {
+  margin: 0 auto;
+  padding-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.events-title-text h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.events-title-text h2 {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .events-container {
+    margin-bottom: 150px;
+  }
+  .events-hero {
+    height: 110px;
+  }
+  .events-layer {
+    height: 110px;
+  }
+  .events-title-text h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0;
+    color: #2B750A;
+  }
+  .events-title-text h2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0;
+    color: #626262;
+  }
+}
+
+.events-main-card {
+  background-color: #F5F5F5;
+  height: 1560px;
+  margin-top: -350px;
+  z-index: -1;
+  margin-bottom: 160px;
+}
+
+.main-card-container {
+  width: 996px;
+  margin: 0 auto;
+  height: 1644px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  position: absolute;
+  top: 380px;
+  right: 350px;
+  padding: 46px 112px 40px 96px;
+  border-bottom: 2px solid #a7a3a3;
+}
+
+.card-content-breadcrump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 41px;
+}
+
+.card-content-breadcrump > * {
+  margin-right: 10px;
+}
+
+.card-content-breadcrump h3:last-of-type {
+  color: #2B750A;
+  font-weight: 700;
+}
+
+.card-content-breadcrump h3, .card-content-breadcrump i {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #626262;
+}
+
+.card-content-breadcrump h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.card-content-info i {
+  font: Regular 32px/35px Material Design Icons;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0;
+  color: #3EA410;
+  margin-bottom: 19px;
+}
+
+.card-content-info h2, .card-content-info span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #00000066;
+}
+
+.card-content-info span {
+  font-weight: 600;
+}
+
+.card-content-info .content--special {
+  font: Bold 16px/20px Montserrat;
+  letter-spacing: 0;
+  color: #3EA410;
+}
+
+.card-content-text {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #202020;
+  margin-bottom: 40px;
+}
+
+.card-content-text h3 span {
+  font-weight: 500;
+}
+
+.content-video {
+  height: 452px;
+  background: #979797 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-video i {
+  color: white;
+  font-size: 200px;
+}
+
+.content-map {
+  height: 480px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 36px;
+}
+
+.content-map img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.events-reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .events-main-card {
+    margin-top: 0;
+  }
+  .events-container {
+    margin-bottom: 180px;
+  }
+  .main-card-container {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .main-card-content {
+    width: 100%;
+  }
+  .card-content-breadcrump {
+    display: none;
+  }
+  .card-content-info i {
+    display: none;
+  }
+  .card-content-info .content--special {
+    color: #00000066;
+  }
+  .card-content-text {
+    text-align: center;
+  }
+  .content-video {
+    width: 100%;
+    height: 215px;
+  }
+  .content-map {
+    height: 509px;
+    width: 100%;
+  }
+}
+
+.events-like {
+  margin-bottom: 100px;
+}
+
+.events-like h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #787878;
+  text-align: center;
+  margin-bottom: 34px;
+}
+/*# sourceMappingURL=events-detail.css.map */

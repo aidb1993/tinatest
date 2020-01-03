@@ -59,7 +59,7 @@
   margin-right: 60px;
 }
 
-.news-main-card h2 {
+.news-main-card a {
   text-align: left;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -68,6 +68,7 @@
   letter-spacing: 0;
   color: #2B750A;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .news-main-card-img {
@@ -87,7 +88,7 @@
   height: 363px;
 }
 
-.news-side-card h2 {
+.news-side-card a {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -96,6 +97,7 @@
   letter-spacing: 0;
   color: #222222;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .news-side-card-img {
@@ -170,7 +172,7 @@
   margin-bottom: 41px;
 }
 
-.news-roll-card h2 {
+.news-roll-card a {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -179,6 +181,7 @@
   letter-spacing: 0;
   color: #222222;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .news-roll-card p {

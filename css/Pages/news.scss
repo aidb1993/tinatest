@@ -66,7 +66,7 @@
     flex-direction: column;
     margin-right: 60px;
 
-        h2 {
+        a {
             text-align: left;
             font-family: $playfair;
             font-weight: 700;
@@ -75,6 +75,7 @@
             letter-spacing: 0;
             color: #2B750A;
             margin-bottom: 10px;
+            text-decoration: none;
         }
 }
 
@@ -93,7 +94,7 @@
     width: 466px;
     height: 363px;
 
-        h2 {
+        a {
             text-align: left;
             font-family: $font-stack;
             font-weight: 700;
@@ -102,6 +103,7 @@
             letter-spacing: 0;
             color: #222222;
             margin-bottom: 10px;
+            text-decoration: none;
         }
 }
 
@@ -183,7 +185,7 @@
     padding-top: 24px;
     margin-bottom: 41px;
 
-    h2 {
+    a {
         text-align: left;
         font-family: $font-stack;
         font-weight: 700;
@@ -192,6 +194,7 @@
         letter-spacing: 0;
         color: #222222;
         margin-bottom: 10px;
+        text-decoration: none;
     }
 
 
