@@ -247,17 +247,21 @@
 @media only screen and (max-width: 768px) {
     .events-main-card {
         margin-top: 0;
+        margin-bottom: 50px;
+        height: 100%;
     }
     .events-container {
         margin-bottom: 180px;
     }
     .main-card-container {
         width: 100%;
+        height: 100%;
         position: relative;
         padding: 10px;
         top: 0;
         right: 0;
         margin: 0 auto;
+        border-bottom: none;
     }
     .main-card-content {
         width: 100%;
@@ -306,4 +310,30 @@
         margin-bottom: 34px;
     }
 }
+
+.upcoming-card-content {
+    h2 {
+        margin-right: auto;
+    }
+}
+
+// Also Like Media Querie
+@media only screen and (max-width: 768px) {
+    .events-like {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .upcoming-card-content {
+        h2 {
+            margin-right: 0;
+        }
+    }
+
+    .upcoming-card:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+
 

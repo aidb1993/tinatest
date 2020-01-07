@@ -5,6 +5,10 @@
 
 @import '../abstracts/variables';
 
+body {
+    background-color: #F8F8F8;
+}
+
 // 1- Main Card
 .main-card {
     padding-top: 26px;
@@ -13,7 +17,17 @@
             max-width: 1040px;
         }
         h3{
+            font-family: $font-stack;
+            font-weight: $font-medium;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0;
+            color: #626262;
             margin-bottom: 20px;
+
+            & .special {
+                color: #2B750A;
+            }
         }
 }
 
@@ -30,6 +44,7 @@
 
 .main-card-text {
     padding: 36px 126px 5px 24px;
+    background-color: white;
 
         h1 {
             font-family: $playfair;
@@ -38,6 +53,7 @@
             line-height: 48px;
             letter-spacing: 0;
             color: #2B750A;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -47,15 +63,71 @@
             line-height: 28px;
             letter-spacing: 0;
             color: #3EA410;
+            margin-bottom: 21px;
+        }
+
+        p {
+            font-family: $font-stack;
+            font-weight: $font-medium;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+            color: #000000DE;
+
+                &:first-of-type{
+                    margin-bottom: 67px;
+                }
+        }
+        .card-text-date h2 {
+            margin-bottom: 30px;
+            font-family: $font-stack;
+            font-size: font-medium;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0;
+            color: #989898;
         }
 }
 
-.card-text-date {
-    margin-bottom: 30px;
-    font-family: $font-stack;
-    font-size: font-medium;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0;
-    color: #989898;
+
+.card-body-img {
+    width: 297px;
+    height: 384px;
+    margin-bottom: 20px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+}
+
+// Main Card Media Querie 
+
+@media only screen and (max-width: 768px) {
+    
+    .main-card {
+        h3 {
+            margin-left: 33px;
+        }
+    }
+
+    .main-card-text {
+        background-color: #F7F7F7;
+        padding: 0 16px;
+    }
+
+    .main-card-img {
+        width: 100%;
+        height: 380px;
+        margin-bottom: 28px;
+    }
+    
+    .card-body-img {
+        width: 80%;
+        height: 384px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
 }
