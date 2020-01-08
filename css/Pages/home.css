@@ -938,10 +938,14 @@
 
 .classesprices-book {
   display: none;
+  -webkit-transition: all .08s linear 0s;
+  transition: all .08s linear 0s;
 }
 
 .classesprices-book--active {
   display: block;
+  -webkit-transition: all 1s linear 0s;
+  transition: all 1s linear 0s;
 }
 
 .prices-dropdown {
@@ -955,12 +959,18 @@
   padding-top: 60px;
   margin-bottom: 80px;
   top: 60px;
-  -webkit-transition: all 5 ease-in 1;
-  transition: all 5 ease-in 1;
+  -webkit-transition: all .08s linear 0s;
+  transition: all .08s linear 0s;
 }
 
 .prices-dropdown h3 {
   cursor: pointer;
+  font: Medium 20px/24px Montserrat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .prices-dropdown-items {
@@ -972,6 +982,8 @@
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-top: 30px;
+  -webkit-transition: all 5s linear 0s;
+  transition: all 5s linear 0s;
 }
 
 .prices-dropdown-items h4 {
@@ -996,6 +1008,8 @@
 
 .prices-dropdown-items--active {
   display: block;
+  -webkit-transition: all 5s linear 0s;
+  transition: all 5s linear 0s;
 }
 
 .facilities__container {

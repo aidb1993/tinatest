@@ -938,10 +938,12 @@ user-select: none;
 
 .classesprices-book {
     display: none;
+    transition: all .08s linear 0s;
 }
 
 .classesprices-book--active {
     display: block;
+    transition: all 1s linear 0s;
 }
 
 .prices-dropdown {
@@ -951,10 +953,16 @@ user-select: none;
     padding-top: 60px;
     margin-bottom: 80px;
     top: 60px;
-    transition: all 5 ease-in 1;
+    transition: all .08s linear 0s;
 
         h3{
             cursor: pointer;
+            font: Medium 20px/24px Montserrat;
+            font-family: $font-stack;
+            font-weight: $font-medium;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, .6);
         }
 }
 
@@ -970,6 +978,7 @@ user-select: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top: 30px;
+    transition: all 5s linear 0s;
 
         
 
@@ -997,6 +1006,7 @@ user-select: none;
 
 .prices-dropdown-items--active{
     display: block;
+    transition: all 5s linear 0s;
 }
 
 // 5- Facilities
