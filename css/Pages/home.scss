@@ -934,6 +934,14 @@ user-select: none;
         }
 }
 
+.classesprices-book {
+    display: none;
+}
+
+.classesprices-book--active {
+    display: block;
+}
+
 .prices-dropdown {
     position: relative;
     display: flex;
