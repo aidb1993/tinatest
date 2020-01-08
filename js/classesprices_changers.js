@@ -84,6 +84,8 @@ function classesCardHandler() {
             classesCardReset();
             classespricesPrice3.innerHTML= "";
             classespricesTitle3.innerHTML= "";
+            classesPricesBook2.classList.remove('classesprices-book--active');
+            classespricesToggle2.style.top = "60px";
             element.classList.add('classes-card-title--active')
             classesCardIndex = newArray.indexOf(element);
             lessonsBoxesHandler(classesCardIndex);
