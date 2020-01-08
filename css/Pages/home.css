@@ -954,6 +954,9 @@
           justify-content: center;
   padding-top: 60px;
   margin-bottom: 80px;
+  top: 60px;
+  -webkit-transition: all 5 ease-in 1;
+  transition: all 5 ease-in 1;
 }
 
 .prices-dropdown h3 {

@@ -7,6 +7,7 @@ const classespricesAges = document.querySelector('.classesprices-description h4'
 const classespricesPrice3 = document.querySelector('#price2 h2');
 const classespricesTitle3 = document.querySelector('#price2 h3');
 const classesPricesBook2 = document.querySelector('.classesprices-book')
+const classespricesToggle2 = document.querySelector('.prices-dropdown');
 
 const classesDetail = document.querySelector('#classesDetail');
 const pricesItem1 = document.querySelector('#prices-item1');
@@ -131,6 +132,7 @@ function lessonsSelectorHandler() {
             classespricesPrice3.innerHTML= "";
             classespricesTitle3.innerHTML= "";
             classesPricesBook2.classList.remove('classesprices-book--active');
+            classespricesToggle2.style.top = "60px";
             element.classList.add('lessons-box--active');
             classespricesChanger(newDesc ,  newPrice2 , newHref ,  newTitle2 , newAge , priceItemTitle1, priceItemTitle2,priceItemTitle3,priceItemTitle4,priceItemTitle5,priceItemTitle6,priceItemTitle7,priceItemTitle8 , priceItemPrice1, priceItemPrice2 ,priceItemPrice3 ,priceItemPrice4 ,priceItemPrice5 ,priceItemPrice6 , priceItemPrice7, priceItemPrice8);
 

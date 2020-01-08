@@ -12,7 +12,9 @@ function classesDropdownSetter(newPrice, newTitle) {
 
 function classesDropdownToggler() {
     classespricesToggle.addEventListener('click', () => {
+        
         classesDropdownContainer.classList.toggle('prices-dropdown-items--active');
+        
     })
 }
 
@@ -24,6 +26,7 @@ function classesDropdownHandler() {
             classesDropdownSetter(newPrice, newTitle);
             classesDropdownContainer.classList.toggle('prices-dropdown-items--active');
             classesPricesBook.classList.add('classesprices-book--active');
+            classespricesToggle.parentElement.style.top = "0";
         })
     });
 }
