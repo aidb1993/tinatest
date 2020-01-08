@@ -944,15 +944,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 160px;
+  padding-top: 60px;
+  margin-bottom: 80px;
 }
 
 .prices-dropdown h3 {
   cursor: pointer;
-}
-
-.prices-dropdown:hover .prices-dropdown-items {
-  display: block;
 }
 
 .prices-dropdown-items {
@@ -984,6 +981,10 @@
 
 .prices-dropdown-items h4:hover {
   background-color: #f1f1f1;
+}
+
+.prices-dropdown-items--active {
+  display: block;
 }
 
 .facilities__container {

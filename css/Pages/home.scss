@@ -938,16 +938,15 @@ user-select: none;
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 160px;
+    padding-top: 60px;
+    margin-bottom: 80px;
 
         h3{
             cursor: pointer;
         }
 }
 
-.prices-dropdown:hover .prices-dropdown-items{
-        display: block;
-    }
+
 
 
 .prices-dropdown-items{
@@ -981,6 +980,10 @@ user-select: none;
             background-color: #f1f1f1;
         }
 
+}
+
+.prices-dropdown-items--active{
+    display: block;
 }
 
 // 5- Facilities

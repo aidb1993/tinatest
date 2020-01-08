@@ -259,9 +259,7 @@ body * {
 }
 
 header {
-  background-color: rgba(235, 235, 235, 0.56);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  background-color: #ebebeb;
   padding: 16px 8% 16px 0;
   z-index: 1000;
 }
@@ -510,7 +508,7 @@ nav {
 }
 
 .footer__content-logo {
-  margin-top: -50px;
+  margin-top: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
