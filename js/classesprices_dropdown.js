@@ -3,6 +3,7 @@ const classespricesPrice2 = document.querySelector('#price2 h2');
 const classespricesTitle2 = document.querySelector('#price2 h3');
 const classespricesToggle = document.querySelector('.prices-dropdown h3');
 const classesDropdownContainer = document.querySelector('.prices-dropdown-items');
+const classesPricesBook = document.querySelector('.classesprices-book');
 
 function classesDropdownSetter(newPrice, newTitle) {
     classespricesPrice2.innerHTML = newPrice;
@@ -22,6 +23,7 @@ function classesDropdownHandler() {
             const newPrice = element.dataset.price1;
             classesDropdownSetter(newPrice, newTitle);
             classesDropdownContainer.classList.toggle('prices-dropdown-items--active');
+            classesPricesBook.classList.add('classesprices-book--active');
         })
     });
 }
