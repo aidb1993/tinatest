@@ -1,5 +1,5 @@
 .banner {
-  background: #A20000;
+  background: #a20000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,12 +13,13 @@
   margin-left: 9%;
 }
 
-.banner__text, .banner a {
+.banner__text,
+.banner a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hero {
@@ -64,7 +65,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 18px auto;
   padding: 0;
 }
@@ -75,7 +76,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 24px;
   padding: 0 40px 20px;
   margin: 0 23px;
@@ -83,8 +84,8 @@
 
 .hero .button {
   margin-top: 90px;
-  -webkit-box-shadow: 0px 2px 2px #0000003D;
-          box-shadow: 0px 2px 2px #0000003D;
+  -webkit-box-shadow: 0px 2px 2px #0000003d;
+          box-shadow: 0px 2px 2px #0000003d;
   border-radius: 2px;
   padding: 14px 73px;
   font-family: "Montserrat", sans-serif;
@@ -114,7 +115,7 @@
     width: 50%;
   }
   .hero__text h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 46px;
     font-weight: 700;
     line-height: 62px;
@@ -260,7 +261,7 @@
       -ms-user-select: none;
           user-select: none;
   font-size: 32px;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   border-radius: 50%;
 }
 
@@ -295,9 +296,9 @@
   width: 100%;
   max-width: 89%;
   margin: 0 auto;
-  background: #F3F3F3;
-  -webkit-box-shadow: 0px 1px 3px #0000001F;
-          box-shadow: 0px 1px 3px #0000001F;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px 1px 3px #0000001f;
+          box-shadow: 0px 1px 3px #0000001f;
 }
 
 .coaches__card-text {
@@ -307,7 +308,7 @@
 
 .coaches__card-text h2 {
   text-align: left;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -317,12 +318,12 @@
 
 .coaches__card-text h3 {
   text-align: left;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0;
-  color: #2B750A;
+  color: #2b750a;
   margin-bottom: 31px;
 }
 
@@ -414,7 +415,7 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .coaches__program {
@@ -560,7 +561,7 @@
 }
 
 .testimonials__card {
-  background: #F3F3F3;
+  background: #f3f3f3;
   width: 90%;
   min-height: 177px;
   margin: 0 auto;
@@ -581,13 +582,13 @@
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0;
-  color: #373A3C;
+  color: #373a3c;
   text-transform: capitalize;
 }
 
 .quotes p {
   text-align: left;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 178px;
   line-height: 238px;
@@ -707,7 +708,7 @@
 }
 
 .facilites__card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 35px 80px 76px;
   height: 552px;
   display: -webkit-box;
@@ -747,7 +748,7 @@
   right: 280px;
   border: 2px solid white;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -757,7 +758,7 @@
   right: 100px;
   border: 2px solid white;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -805,7 +806,7 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #000000DE;
+  color: #000000de;
   opacity: 0.6;
   padding-top: 30px;
 }
@@ -825,7 +826,7 @@
 }
 
 .facilities__tech-card {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 4px;
@@ -916,7 +917,7 @@
     right: 314px;
     border: 2px solid white;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     cursor: pointer;
   }
   .facilities__preview-arrow-right {
@@ -925,7 +926,7 @@
     right: -3px;
     border: 2px solid white;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     cursor: pointer;
   }
   .facilities__preview-text {
@@ -1033,13 +1034,14 @@
   margin-right: 32px;
 }
 
-.title-group--active h1, .title-group--active h2 {
-  color: #3EA410;
+.title-group--active h1,
+.title-group--active h2 {
+  color: #3ea410;
 }
 
 .classesprices-card {
   height: 681px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 16px 0 0 24px;
   display: none;
 }
@@ -1079,11 +1081,11 @@
 }
 
 .classes-card-title--active {
-  border-bottom: 2px solid #3EA410;
+  border-bottom: 2px solid #3ea410;
 }
 
 .classes-card-title--active h3 {
-  color: #3EA410;
+  color: #3ea410;
 }
 
 .lessons-boxes {
@@ -1097,7 +1099,7 @@
 .lessons-box {
   width: 588px;
   height: 100px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 8px;
   margin-bottom: 12px;
   position: relative;
@@ -1106,14 +1108,14 @@
 
 .lessons-box i {
   font-size: 32px;
-  color: #3EA410;
+  color: #3ea410;
   position: absolute;
   top: 34px;
   right: 24px;
 }
 
 .lessons-box--active {
-  border: 4px solid #3EA410;
+  border: 4px solid #3ea410;
 }
 
 .lessons-box-text {
@@ -1153,7 +1155,7 @@
 }
 
 .classesprices-description i {
-  color: #3EA410;
+  color: #3ea410;
   font-size: 30px;
   margin-left: 290px;
   margin-bottom: 15px;
@@ -1189,17 +1191,17 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #3EA410;
+  color: #3ea410;
 }
 
 .classesprices-description h3 a {
   text-decoration: none;
-  color: #3EA410;
+  color: #3ea410;
 }
 
 .classesprices-prices {
   height: 391px;
-  background: transparent linear-gradient(122deg, #8BC86F 0%, #3EA410 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(122deg, #8bc86f 0%, #3ea410 100%) 0% 0% no-repeat padding-box;
   padding-top: 27px;
 }
 
@@ -1210,7 +1212,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .classesprices-prices h2 {
@@ -1221,15 +1223,15 @@
   font-size: 47px;
   line-height: 63px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .classesprices-prices a {
   padding: 15px 16px 14px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 2px 2px #0000003D;
-          box-shadow: 0px 2px 2px #0000003D;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 2px #0000003d;
+          box-shadow: 0px 2px 2px #0000003d;
   border-radius: 2px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -1237,7 +1239,7 @@
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0;
-  color: #3EA410;
+  color: #3ea410;
   display: inline-block;
   margin-bottom: 20px;
   text-decoration: none;
@@ -1250,8 +1252,8 @@
 
 .classesprices-book {
   display: none;
-  -webkit-transition: all .08s linear 0s;
-  transition: all .08s linear 0s;
+  -webkit-transition: all 0.08s linear 0s;
+  transition: all 0.08s linear 0s;
 }
 
 .classesprices-book--active {
@@ -1271,8 +1273,8 @@
   padding-top: 60px;
   margin-bottom: 20px;
   top: 60px;
-  -webkit-transition: all .08s linear 0s;
-  transition: all .08s linear 0s;
+  -webkit-transition: all 0.08s linear 0s;
+  transition: all 0.08s linear 0s;
 }
 
 .prices-dropdown h3 {
@@ -1344,7 +1346,7 @@
           clip-path: polygon(42% 0, 100% 0, 100% 100%, 0% 100%);
   height: 452px;
   width: 1200px;
-  background-color: #3EA410;
+  background-color: #3ea410;
   margin-left: auto;
   position: absolute;
   top: 0;
@@ -1363,9 +1365,11 @@
 .stars-content-text {
   z-index: 10;
   margin-right: -350px;
-  background-color: white;
+  margin-left: -120px;
+  background-color: #ffffff;
   height: 330px;
   position: relative;
+  padding: 0 0 0 200px;
 }
 
 .stars-content-text h1 {
@@ -1375,12 +1379,12 @@
   font-size: 42px;
   line-height: 52px;
   letter-spacing: 0;
-  color: #BCBCBC;
+  color: #bcbcbc;
   text-transform: uppercase;
 }
 
 .stars-content-text h1:nth-of-type(2) {
-  color: #3EA410;
+  color: #3ea410;
   width: 400px;
 }
 
@@ -1398,10 +1402,11 @@
 }
 
 .stars-content-arrows {
-  color: #2B750A;
+  color: #2b750a;
   font-size: 24px;
   position: absolute;
   bottom: 70px;
+  margin-left: 77px;
   z-index: 20;
 }
 
@@ -1420,10 +1425,11 @@
   position: relative;
 }
 
-.stars-content-card, .stars-content-card-fixed {
+.stars-content-card,
+.stars-content-card-fixed {
   width: 384px;
   height: 304px;
-  background: #F1F1F1 0% 0% no-repeat padding-box;
+  background: #f1f1f1 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 8px 9px #00000029;
           box-shadow: 0px 8px 9px #00000029;
   border-radius: 4px;
@@ -1433,7 +1439,8 @@
   bottom: 0;
 }
 
-.stars-content-card p, .stars-content-card-fixed p {
+.stars-content-card p,
+.stars-content-card-fixed p {
   text-align: left;
   font: Medium 14px/20px Montserrat;
   font-family: "Montserrat", sans-serif;
@@ -1442,6 +1449,10 @@
   line-height: 20px;
   letter-spacing: 0;
   color: rgba(0, 0, 0, 0.871);
+}
+
+.stars-content-card {
+  margin-left: 0;
 }
 
 .content-card-disabled {
@@ -1480,7 +1491,7 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #3EA410;
+  color: #3ea410;
 }
 
 .stars-content-card-header-text h3 {
@@ -1510,7 +1521,7 @@
   font-size: 36px;
   line-height: 44px;
   letter-spacing: 0;
-  color: #FFFFFFDE;
+  color: #ffffffde;
   padding: 72px 0 0 120px;
   margin-bottom: 68px;
 }
@@ -1525,7 +1536,7 @@
 
 .tips__description {
   width: 791px;
-  background: #2B2B2B;
+  background: #2b2b2b;
   position: absolute;
   top: 467px;
   left: 0;
@@ -1539,7 +1550,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 25px 0 25px 25px;
 }
 
