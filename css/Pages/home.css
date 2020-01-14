@@ -1364,7 +1364,7 @@
 
 .stars-content-text {
   z-index: 10;
-  margin-right: -350px;
+  margin-right: 10px;
   margin-left: -120px;
   background-color: #ffffff;
   height: 330px;
@@ -1408,6 +1408,10 @@
   bottom: 70px;
   margin-left: 77px;
   z-index: 20;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .stars-content-arrows i {
@@ -1591,6 +1595,139 @@
   .drawer__title-logo img {
     height: initial;
   }
+}
+
+.getintouch {
+  background-color: #F5F5F5;
+  height: 900px;
+  padding-top: 80px;
+}
+
+.getintouch-card {
+  width: 792px;
+  height: 820px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.getintouch-card h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: #3EA410;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.getintouch-card-email {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 23px;
+}
+
+.getintouch-card-email i {
+  color: #3EA410;
+  font-size: 60px;
+}
+
+.getintouch-form {
+  padding: 0 120px;
+}
+
+.getintouch-form form {
+  position: relative;
+}
+
+.getintouch-form form :focus {
+  outline: none !important;
+  border: 3px solid rgba(62, 164, 16, 0.8);
+  -webkit-box-shadow: 0 0 5px #719ECE;
+          box-shadow: 0 0 5px #719ECE;
+}
+
+.getintouch-form form ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 18px 0 16px 11px;
+}
+
+.getintouch-form form :-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 18px 0 16px 11px;
+}
+
+.getintouch-form form ::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 18px 0 16px 11px;
+}
+
+.getintouch-form form ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 18px 0 16px 11px;
+}
+
+.getintouch-form form input {
+  width: 100%;
+  height: 54px;
+  margin-bottom: 36px;
+  border: 1px solid #CBCBCB;
+  border-radius: 4px;
+}
+
+.getintouch-form form textarea {
+  width: 100%;
+  height: 216px;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+.getintouch-form form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 8px 7px;
+  background: #3EA410 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 2px #0000003D;
+          box-shadow: 0px 2px 2px #0000003D;
+  border-radius: 2px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-weight: 14px;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #FFFFFF;
 }
 
 .instagram {

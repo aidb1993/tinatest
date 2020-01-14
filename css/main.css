@@ -441,6 +441,10 @@ nav {
   background-color: #F6F6F6;
 }
 
+.footer__container .container {
+  max-width: 1500px;
+}
+
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;

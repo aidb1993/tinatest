@@ -3,6 +3,10 @@
 .footer__container {
     height: 292px;
     background-color: #F6F6F6;
+
+    .container {
+        max-width: 1500px;
+      }
     }
     
     .footer__content {
