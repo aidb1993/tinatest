@@ -9,7 +9,7 @@ function dawSetter() {
         newArray[daw_index].classList.add('awards-boxes--active');
     });
 
-    const newArray2 = Array.from(daw_dots)
+    const newArray2 = Array.from(daw_dots);
     newArray2.forEach(element => {
         element.classList.remove('boxes-desk-dot--active');
         newArray2[daw_index].classList.add('boxes-desk-dot--active')
@@ -17,7 +17,7 @@ function dawSetter() {
 }
 
 function dawEnabler() {
-    const newArray = Array.from(daw_dots)
+    const newArray = Array.from(daw_dots);
     newArray.forEach(element => {
         element.addEventListener('click', () => {
             element.classList.remove('boxes-desk-dot--active');

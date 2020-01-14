@@ -25,7 +25,7 @@ function facCloser() {
 
 
 function facSeter() {
-    const newArray = Array.from(facilities_toggler)
+    const newArray = Array.from(facilities_toggler);
         newArray.forEach(element => {
         element.addEventListener('click' , () => {
             facilities_index = newArray.indexOf(element);

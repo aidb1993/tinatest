@@ -9,7 +9,7 @@ function awSetter() {
         newArray[aw_index].classList.add('box--active');
     });
 
-    const newArray2 = Array.from(aw_dots)
+    const newArray2 = Array.from(aw_dots);
     newArray2.forEach(element => {
         element.classList.remove('boxes-dot--active');
         newArray2[aw_index].classList.add('boxes-dot--active')
@@ -17,7 +17,7 @@ function awSetter() {
 }
 
 function awEnabler() {
-    const newArray = Array.from(aw_dots)
+    const newArray = Array.from(aw_dots);
     newArray.forEach(element => {
         element.addEventListener('click', () => {
             element.classList.remove('boxes-dot--active');

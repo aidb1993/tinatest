@@ -13,19 +13,19 @@ function testReset() {
     testimonial_dots.forEach(item => {
         item.classList.remove('dots--active')
     });
-};
+}
 
 function setTest() {
     
-    testimonial_dots[testimonial_index].classList.toggle('dots--active')
+    testimonial_dots[testimonial_index].classList.toggle('dots--active');
     testimonial_cards[testimonial_index].classList.toggle('testimonials__card--active')
 }
 
 function traverseDots () {
-    const newArr = Array.from(testimonial_dots)
+    const newArr = Array.from(testimonial_dots);
     newArr.forEach(item => {
         item.addEventListener('click' , () => {
-            testimonial_index= (newArr.indexOf(item))
+            testimonial_index= (newArr.indexOf(item));
             testReset();
             setTest();
         })

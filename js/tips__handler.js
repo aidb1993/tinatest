@@ -1,5 +1,5 @@
 const video_tips = document.getElementById('tips-video');
-const tips_text = document.getElementById('tips-description')
+const tips_text = document.getElementById('tips-description');
 const tips_changers = document.querySelectorAll('.tips-changer');
 
 function changeVideoTips(newSrc, newDesc) {

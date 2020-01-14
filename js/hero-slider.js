@@ -12,11 +12,11 @@ function heroChanger() {
 // Currently setted for 2 slides in case of more simply change if(heroIndex<X)
 setInterval(() => {
     if(heroIndex<1) {
-        heroReset()
-        heroIndex++
+        heroReset();
+        heroIndex++;
         heroChanger();
     } else {
-        heroReset()
+        heroReset();
         heroIndex = 0;
         heroChanger();
     }

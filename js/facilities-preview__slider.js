@@ -16,8 +16,8 @@ function facilities_previewSetter() {
     facilities_preview_right.forEach(element => {
         element.addEventListener('click', ()=> {
             if ( index < facilities_preview.length - 1) {
-                index++
-                facilities_previewHanddler(index)
+                index++;
+                facilities_previewHanddler(index);
                 facilities_container.style.background='url(/images/biltmore.jpg)';
                 facilities_container.style.backgroundSize = 'cover';
                 facilities_container.style.backgroundRepeat = 'no-repeat';
@@ -25,7 +25,7 @@ function facilities_previewSetter() {
                 
              } else {
                  index = 0;
-                 facilities_previewHanddler(index)
+                 facilities_previewHanddler(index);
                  facilities_container.style.background='url(/images/facilities-bg.png)';
                  facilities_container.style.backgroundSize = 'cover';
                  facilities_container.style.backgroundRepeat = 'no-repeat';
@@ -33,18 +33,18 @@ function facilities_previewSetter() {
              }
         })
         
-    })
+    });
 
     facilities_preview_left.forEach(element => {
         element.addEventListener('click', ()=> {
             if ( index > 0) {
-                index--
-                facilities_previewHanddler(index)
+                index--;
+                facilities_previewHanddler(index);
                 facilities_container.style.background='url(/images/facilities-bg.png)';
                 facilities_container.style.backgroundSize = 'cover';
                 facilities_container.style.backgroundRepeat = 'no-repeat';
             } else {
-                index = (facilities_preview.length - 1)
+                index = (facilities_preview.length - 1);
                 facilities_container.style.background='url(/images/biltmore.jpg)';
                 facilities_container.style.backgroundSize = 'cover';
                 facilities_container.style.backgroundRepeat = 'no-repeat';
@@ -54,5 +54,5 @@ function facilities_previewSetter() {
     })
 }
 
-facilities_previewSetter()
+facilities_previewSetter();
 

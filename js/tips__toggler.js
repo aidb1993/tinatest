@@ -26,4 +26,4 @@ function enable () {
     });
 }
 
-enable()
+enable();
