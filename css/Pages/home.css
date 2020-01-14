@@ -1457,6 +1457,8 @@
 
 .stars-content-card {
   margin-left: 0;
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
 }
 
 .content-card-disabled {
