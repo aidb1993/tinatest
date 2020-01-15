@@ -5,7 +5,22 @@ const facilities_toggler = document.querySelectorAll('.facilities__tech-card');
 const modalArray = Array.from(facilities_modals);
 let facilities_index = 0;
 
+function facClickOutside() {
+    document.addEventListener('click' , (e) => {
+       let isClickedInside = facilities_toggler[facilities_index].contains(e.target)
+       if ( isClickedInside || facilities_modals[facilities_index].contains(e.target)) {
+           return
+       } else {
+        modalArray[facilities_index].classList.remove('modal--active');
+       }
+    } )
+}
 
+function facReset() {
+    modalArray.forEach(element => {
+        element.classList.remove('modal--active')
+    });
+}
 
 function facCloser() {
     const xArray = Array.from(facilities_x);
@@ -28,8 +43,10 @@ function facSeter() {
     const newArray = Array.from(facilities_toggler);
         newArray.forEach(element => {
         element.addEventListener('click' , () => {
+            facReset()
             facilities_index = newArray.indexOf(element);
             modalArray[facilities_index].classList.add('modal--active');
+            
         })
     });
 }
@@ -37,6 +54,8 @@ function facSeter() {
 
 facSeter();
 facCloser();
+facClickOutside()
+
 
 
 

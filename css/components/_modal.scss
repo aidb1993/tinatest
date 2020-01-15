@@ -68,7 +68,14 @@
 
 .modal--active {
     display: block;
+    animation: slider2 .5s linear 0s ;
 }
+
+@keyframes slider2 {
+    from { transform: translatey(-100px);}
+    to {transform: translatey(0px);}
+  }
+
 
 @media only screen and (max-width: 768px) {
     .modal--active {

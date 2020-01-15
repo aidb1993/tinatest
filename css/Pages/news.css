@@ -22,11 +22,11 @@
 .main-news p {
   text-align: left;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #000000DE;
+  color: rgba(0, 0, 0, 0.6);
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -142,7 +142,6 @@
     border-radius: 4px;
     max-width: 349px;
     margin: 0 auto;
-    margin-top: -70px;
     margin-bottom: 16px;
   }
   .news-main-card-img {
@@ -187,11 +186,11 @@
 .news-roll-card p {
   text-align: left;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #000000DE;
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 16px;
 }
 

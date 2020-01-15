@@ -306,12 +306,13 @@
       justify-content: space-around;
   width: 20%;
   margin: 0 auto;
+  padding-top: 70px;
   color: rgba(128, 128, 128, 0.8);
 }
 
 .boxes-desk-dots i {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .boxes-desk-dot--active {

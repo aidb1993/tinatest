@@ -130,6 +130,30 @@ body * {
 
 .drawer__content--active {
   display: block;
+  -webkit-animation: slider3 0.5s ease-in-out 0s;
+          animation: slider3 0.5s ease-in-out 0s;
+}
+
+@-webkit-keyframes slider3 {
+  from {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes slider3 {
+  from {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
 }
 
 .drawer__content-item {
@@ -250,6 +274,30 @@ body * {
 
 .modal--active {
   display: block;
+  -webkit-animation: slider2 .5s linear 0s;
+          animation: slider2 .5s linear 0s;
+}
+
+@-webkit-keyframes slider2 {
+  from {
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes slider2 {
+  from {
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  to {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -350,7 +398,6 @@ nav {
 
 .active #toggle {
   position: absolute;
-  top: 4%;
 }
 
 .toggle {
@@ -359,7 +406,6 @@ nav {
           order: 2;
   position: absolute;
   right: 5%;
-  top: 30%;
 }
 
 @media only screen and (min-width: 900px) {
@@ -429,7 +475,14 @@ nav {
     color: black;
   }
   .nav--active a {
-    color: black;
+    color: #3EA410;
+  }
+  .nav--disabled a {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .nav--disabled a:hover {
+    color: rgba(0, 0, 0, 0.3);
   }
   .button {
     font-size: 14px;
@@ -437,7 +490,7 @@ nav {
 }
 
 .footer__container {
-  height: 292px;
+  height: 324px;
   background-color: #F6F6F6;
 }
 

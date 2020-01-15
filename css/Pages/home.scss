@@ -92,6 +92,11 @@
   }
 }
 
+.hero-arrows {
+  display: none;
+}
+
+
 // Hero Media Queries
 
 @media only screen and (min-width: 768px) {
@@ -157,7 +162,27 @@
   .hero-slider-1 {
     background-image: url(/images/hero-slider-2.png);
   }
+
+  .hero-arrows {
+    display: block;
+    text-align: center;
+    padding-top: 46px;
+    user-select: none;
+    i {
+      font-size: 36px;
+      background: #FFFFFF4D 0% 0% no-repeat padding-box;
+      padding: 18px;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      &:first-of-type {
+        margin-right: 258px;
+      }
+    }
+  }
 }
+
+
 
 // 2- Shields
 
@@ -219,6 +244,7 @@
     color: #787878;
     text-transform: uppercase;
     padding: 68px 120px;
+    padding-left: 0;
   }
 }
 
@@ -239,6 +265,12 @@
     justify-content: space-around;
   }
 
+  @keyframes slider {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(10px);}
+  }
+
   img {
     height: 96px;
     width: 96px;
@@ -253,6 +285,7 @@
     border: 5.7px solid $primary-color;
     border-radius: 138px;
     box-sizing: border-box;
+    animation: slider 0.3s linear 0s ;
   }
 
   &__arrow {
@@ -282,6 +315,7 @@
 
   .dots__item {
     cursor: pointer;
+    font-size: 17px;
   }
 }
 
@@ -982,7 +1016,6 @@
     line-height: 20px;
     letter-spacing: 0;
     color: rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
   }
 }
 
@@ -1223,6 +1256,7 @@
   margin-bottom: 20px;
   top: 60px;
   transition: all 0.08s linear 0s;
+  
 
   h3 {
     cursor: pointer;
@@ -1247,17 +1281,17 @@
   z-index: 1;
   margin-top: 30px;
   transition: all 5s linear 0s;
+  border-radius: 4px;
 
   h4 {
     text-align: center;
     font-family: $font-stack;
     font-weight: $font-medium;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 48px;
     letter-spacing: 0;
     color: rgba(62, 164, 16, 0.87);
     cursor: pointer;
-    margin-bottom: 10px;
 
     &:first-of-type {
       margin-top: 10px;
@@ -1464,6 +1498,7 @@
     color: #ffffffde;
     padding: 72px 0 0 120px;
     margin-bottom: 68px;
+    padding-left: 0;
   }
 }
 
@@ -1495,6 +1530,7 @@
     font-weight: $font-medium;
   }
 }
+
 
 // Tips Media Queries
 
@@ -1606,6 +1642,16 @@
             border: 1px solid #CBCBCB;
             border-radius: 4px;
 
+            &[type="text"], &[type="email"] , &[type="tel"] {
+              font-family: $font-stack;
+              font-weight: $font-medium;
+              font-weight: 16px;
+              line-height: 19px;
+              letter-spacing: 0;
+              color: rgba(0, 0, 0 , .8);
+              padding: 18px 0 16px 11px;
+            }
+
             
         }
         textarea {
@@ -1613,6 +1659,18 @@
             height: 216px;
             margin-bottom: 50px;
             margin-top: -10px;
+            border: 1px solid #CBCBCB;
+            border-radius: 4px;
+            
+            &[type="text"] {
+              font-family: $font-stack;
+              font-weight: $font-medium;
+              font-weight: 16px;
+              line-height: 19px;
+              letter-spacing: 0;
+              color: rgba(0, 0, 0 , .8);
+              padding: 18px 0 16px 11px;
+            }
         }
         button {
             position: absolute;
@@ -1632,6 +1690,34 @@
         }
     }
 }
+
+.getintouch-card-email{
+  -webkit-animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+  animation: vibrate 2s cubic-bezier(.36, .07, .19, .97) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+  
+@keyframes vibrate {
+  0%, 2%, 4%, 6%, 8%, 10%, 12%, 14%, 16%, 18% {
+    -webkit-transform: translate3d(-6px, 0, 0);
+            transform: translate3d(-6px, 0, 0);
+  }
+  1%, 3%, 5%, 7%, 9%, 11%, 13%, 15%, 17%, 19% {
+    -webkit-transform: translate3d(6px, 0, 0);
+            transform: translate3d(6px, 0, 0);
+  }
+  20%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 // 9- Instagram
 
 .instagram {
@@ -1646,5 +1732,10 @@
   .instagram {
     display: none;
   }
+}
+
+.separator {
+  height: 28px;
+  background: #9ED187 0% 0% no-repeat padding-box;
 }
 
