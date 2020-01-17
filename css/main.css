@@ -282,10 +282,12 @@ body * {
   from {
     -webkit-transform: translatey(-100px);
             transform: translatey(-100px);
+    opacity: 0;
   }
   to {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+    opacity: 1;
   }
 }
 
@@ -293,10 +295,12 @@ body * {
   from {
     -webkit-transform: translatey(-100px);
             transform: translatey(-100px);
+    opacity: 0;
   }
   to {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+    opacity: 1;
   }
 }
 

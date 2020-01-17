@@ -72,8 +72,8 @@
 }
 
 @keyframes slider2 {
-    from { transform: translatey(-100px);}
-    to {transform: translatey(0px);}
+    from { transform: translatey(-100px); opacity: 0;}
+    to {transform: translatey(0px); opacity: 1;}
   }
 
 

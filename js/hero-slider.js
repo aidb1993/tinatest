@@ -56,6 +56,6 @@ setInterval(() => {
         heroIndex = 0;
         heroChanger();
     }
-}, 10000);
+}, 15000);
 
 heroArrowsSetter()
